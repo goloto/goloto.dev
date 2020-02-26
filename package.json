@@ -2,11 +2,23 @@
   "name": "goloto.dev",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "author": "Mikhail Goloto",
+  "license": "ISC",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "node test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goloto/goloto.dev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/goloto/goloto.dev/issues"
+  },
+  "homepage": "https://github.com/goloto/goloto.dev#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
