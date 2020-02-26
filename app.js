@@ -1,11 +1,10 @@
-const http = require("http");
-const header = require("./templates/header");
+const express = require('express');
+const app = express();
 
-http.createServer(function (request, response) {
+app.get('/', function(req, res) {
+    res.send('hello world');
+});
 
-    response.end("Hello NodeJS!" + header.text);
-
-}).listen(3000, "127.0.0.1", function () {
-
-    console.log("Start listening request on port 3000");
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000!');
 });
