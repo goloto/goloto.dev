@@ -1,14 +1,10 @@
 const express = require('express');
 const app = express();
-
-let port = process.env.PORT;
-if (port == null || port == "") {
-    port = 8000;
-}
+const PORT = process.env.PORT || 5000;
 
 app.get('/', function(req, res) {
     res.send('hello world');
-    console.log('somebody send GET to 3000 port')
+    console.log('somebody send GET to 5000 port')
 });
 
 app.listen(port);
