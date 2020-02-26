@@ -1,1 +1,1 @@
-module.exports.name = "header";
+module.exports.text = "header";
