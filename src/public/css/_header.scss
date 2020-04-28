@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  background-color: $purple;
+  color: white;
+
+  &__logo {
+    font-size: 36px;
+    padding: 10px;
+    font-weight: 800;
+  }
+
+  &__menu {
+    .menu {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      height: 100%;
+
+      &__item {
+        background-color: $purple;
+        transition: background-color .2s ease-in;
+
+        &:hover {
+          background-color: $purpleHover;
+
+          .pop-up-menu {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
+        &:active {
+          background-color: $purpleDoubleHover;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          padding: 0 10px 0 10px;
+          text-decoration: none;
+          color: white;
+        }
+
+        .pop-up-menu {
+          visibility: hidden;
+          opacity: 0;
+          transition: opacity .2s ease-in, visibility .2s ease-in;
+          display: flex;
+          position: absolute;
+          left: 0;
+          background-color: $purpleHover;
+          z-index: 10;
+          height: auto;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+
+          &__item {
+            background-color: $purpleHover;
+            transition: background-color .2s ease-in;
+
+            &:hover {
+              background-color: $purpleDoubleHover;
+            }
+
+            a {
+              padding: 12px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

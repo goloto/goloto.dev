@@ -1,0 +1,137 @@
+.main {
+  .timeline {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__years {
+      font-size: 22px;
+      margin: auto 10px auto 10px;
+
+      .years {
+        &-tech {
+          color: $purple;
+        }
+
+        &__bottom-line {
+          font-size: 13px;
+          color: gray;
+          text-align: last;
+        }
+      }
+
+      .years-plug {
+        .plug {
+          color: transparent;
+        }
+      }
+    }
+
+    &__line {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 10px 0 10px;
+      position: relative;
+      background-color: black;
+      width: 4px;
+
+      &-tech {
+        background-color: $purple;
+      }
+
+      .circle {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        border-radius: 8px;
+        border: black solid;
+        top: calc(50% - 6px);
+
+        &-tech {
+          border-color: $purple;
+        }
+      }
+    }
+
+    &__description {
+      width: 100%;
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        text-align: right;
+
+        &__top-line {
+          &-tech {
+            color: $purple;
+            font-size: 22px;
+            line-height: 32px;
+            font-weight: 600;
+            text-align: left;
+          }
+        }
+
+        &__bottom-line {
+          font-size: 14px;
+          color: gray;
+
+          &-tech {
+            color: $purpleHover;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    &__first-item, &__last-item {
+      display: flex;
+      flex-direction: row;
+
+      .timeline__last-line {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 10px 0 10px;
+        position: relative;
+
+        .last-line-visible {
+          background-color: black;
+          width: 1.5px;
+          height: 50%;
+
+          &-tech-first {
+            background: linear-gradient(0deg, rgba(99, 0, 156, 1) 0%, rgba(240, 248, 255, 1) 100%);
+          }
+
+          &-tech-last {
+            background: linear-gradient(0deg, rgba(240, 248, 255, 1) 0%, rgba(99, 0, 156, 1) 100%);;
+          }
+        }
+
+        .last-line-invisible {
+          height: 50%;
+        }
+
+        .circle {
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background-color: white;
+          border-radius: 8px;
+          border: black solid;
+          left: -5px;
+
+          &-tech {
+            border-color: $purple;
+          }
+        }
+      }
+    }
+  }
+}

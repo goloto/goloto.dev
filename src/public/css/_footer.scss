@@ -1,0 +1,65 @@
+.footer {
+  display: flex;
+  background-color: aliceblue;
+  border-top: solid;
+  border-color: $purple;
+  color: gray;
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 10px 0 0;
+
+    &__item {
+      background-color: aliceblue;
+      transition: background-color 0.2s ease-in;
+
+      &:hover {
+        background-color: #ddeeff;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding: 0 10px 0 10px;
+        text-decoration: none;
+        margin: 0;
+        color: gray;
+      }
+    }
+  }
+
+  &__postscript {
+    margin: auto 0 auto 0;
+
+    .covid {
+      color: seagreen;
+
+      &:hover {
+        &__smile {
+          visibility: visible;
+          opacity: 1;
+          transition: opacity 1s ease-in;
+        }
+      }
+
+      &__smile {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      svg {
+        fill: seagreen;
+        height: 12px;
+      }
+    }
+  }
+}

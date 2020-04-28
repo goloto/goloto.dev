@@ -1,0 +1,95 @@
+$purple: #63009c;
+$purpleHover: #4c0077;
+$purpleDoubleHover: #3a005b;
+
+$desktopWidth: 1024px;
+
+@import "normalize";
+@import "header";
+@import "footer";
+@import "personal";
+@import "timeline";
+
+@font-face {
+  font-family: JetBrains Mono;
+  src: url("fonts/JetBrainsMono-Regular.ttf");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: JetBrains Mono;
+}
+
+main {
+  display: flex;
+}
+
+.main {
+  background-color: aliceblue;
+
+  h1 {
+    text-align: center;
+  }
+
+  &__column {
+    flex-direction: column;
+  }
+
+  .content-container {
+    margin: 30px 0 30px 0;
+  }
+
+  .job-ready {
+    text-align: center;
+  }
+}
+
+.narrow-container {
+  display: flex;
+  margin: auto;
+  width: 95%;
+}
+
+@media (min-width: 1024px) {
+  .narrow-container {
+    width: $desktopWidth;
+  }
+}
+
+ul.links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 10% 0 10%;
+  padding: 0;
+  position: relative;
+
+  svg {
+    height: 45px;
+    fill: $purple;
+    padding: 10px 20px 10px 20px;
+    transition: background-color 0.2s ease-in, fill 0.2s linear;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #ddeeff;
+    }
+  }
+
+  svg.linked-in:hover {
+    fill: #0077b5;
+  }
+
+  svg.vk:hover {
+    fill: #5181b8;
+  }
+
+  svg.hacker-rank:hover {
+    fill: #2fc363;
+  }
+
+  svg.github:hover {
+    fill: black;
+  }
+}

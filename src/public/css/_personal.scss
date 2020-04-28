@@ -1,0 +1,37 @@
+.main {
+  .personal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .my-face {
+      display: flex;
+
+      &__img {
+        height: 240px;
+        border-radius: 120px;
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 0 0 20px;
+
+      &-list {
+        &__item {
+          display: flex;
+          flex-direction: row;
+
+          &::before {
+            content: "•";
+            color: $purple;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}

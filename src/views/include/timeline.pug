@@ -1,0 +1,66 @@
+mixin timeline-first
+    .timeline__first-item
+        .timeline__description
+            .description Your company?
+        .timeline__last-line
+            .last-line-invisible
+            .last-line-visible
+            .circle
+        .timeline__years
+            .years-plug
+                .plug 9999
+        .timeline__last-line
+            .last-line-invisible
+            .last-line-visible.last-line-visible-tech-first
+        .timeline__description
+
+mixin timeline-last
+    .timeline__last-item
+        .timeline__description
+            .description Realized myself as a developer
+        .timeline__last-line
+            .last-line-visible
+            .last-line-invisible
+            .circle
+        .timeline__years
+            .years-plug
+                .plug 0000
+        .timeline__last-line
+            .last-line-visible.last-line-visible-tech-last
+            .last-line-invisible
+        .timeline__description
+
+.timeline
+    +timeline-first
+    each val in timeline
+        - var expTopLine = val.experience ? val.experience.topLine : false
+
+        .timeline__item
+            .timeline__description
+                .description
+                    if val.experience
+                        .description__top-line !{expTopLine}
+                        .description__bottom-line= val.experience.bottomLine
+            .timeline__line
+                if val.experience
+                    .circle
+            .timeline__years
+                if val.technologies
+                    .years.years-tech
+                        .years__top-line= val.year.start
+                        if val.year.end
+                            .years__bottom-line — #{val.year.end}
+                else
+                    .years
+                        .years__top-line= val.year.start
+                        if val.year.end
+                            .years__bottom-line — #{val.year.end}
+            .timeline__line.timeline__line-tech
+                if val.technologies
+                    .circle.circle-tech
+            .timeline__description
+                .description
+                    if val.technologies
+                        .description__top-line.description__top-line-tech= val.technologies.topLine
+                        .description__bottom-line.description__bottom-line-tech= val.technologies.bottomLine
+    +timeline-last

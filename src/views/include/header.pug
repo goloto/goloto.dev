@@ -1,0 +1,28 @@
+doctype html
+html
+    include ./head
+    body
+        header.header
+            .narrow-container
+                .header__logo goloto.dev
+                .header__menu
+                    ul.menu
+                        li.menu__item
+                            a(href='/projects') projects
+                        li.menu__item
+                            a(href='/apps') apps
+                            .header__pop-up-menu
+                                ul.pop-up-menu
+                                    .narrow-container
+                                        li.pop-up-menu__item
+                                            a(href='/apps/calc') ➗calc
+                                        li.pop-up-menu__item
+                                            a(href='/apps/404') &#128030;404
+                                        li.pop-up-menu__item
+                                            a(href='/apps/mines') &#128163;mines
+                        li.menu__item
+                            a(href='/about') about
+
+        main.main
+            .narrow-container.main__column
+                span
