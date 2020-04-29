@@ -615,6 +615,12 @@ main {
 .main h1 {
   text-align: center;
 }
+
+.main a {
+  text-decoration: none;
+  color: #35a1ff;
+}
+
 .main__column {
   flex-direction: column;
 }

@@ -4,7 +4,7 @@ let timeline = [{
         end: "now"
     },
     experience: {
-        topLine: "Working for <a href='https://www.redbee.ru/'>Redbee</a>",
+        topLine: "Working for <a href='https://www.redbee.ru/' target='_blank'>Redbee</a>",
         bottomLine: "JS • PHP • CSS • HTML • Git • BITRIX"
     }
 }, {
@@ -46,7 +46,7 @@ let timeline = [{
         end: "2019"
     },
     experience: {
-        topLine: "Worked for <a href='https://int.uni-dubna.ru/'>Dubna State University</a>",
+        topLine: "Worked for <a href='https://int.uni-dubna.ru/' target='_blank'>Dubna State University</a>",
         bottomLine: "Developing chat bot for students"
     }
 }, {
@@ -70,7 +70,7 @@ let timeline = [{
         start: "2017"
     },
     experience: {
-        topLine: "Practice at <a href='http://www.jinr.ru/main-en/'>JINR</a>",
+        topLine: "Practice at <a href='http://www.jinr.ru/main-en/' target='_blank'>JINR</a>",
         bottomLine: "C++ and legacy • Refactoring code for BM@N project"
     }
 },];

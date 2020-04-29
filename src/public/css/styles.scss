@@ -32,6 +32,11 @@ main {
     text-align: center;
   }
 
+  a {
+    text-decoration: none;
+    color: #35a1ff;
+  }
+
   &__column {
     flex-direction: column;
   }
