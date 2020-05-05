@@ -474,21 +474,31 @@ template {
   justify-content: center;
   margin: 0 0 0 20px;
 }
+
+.main .personal .contacts-list {
+  padding: 0;
+}
+
 .main .personal .contacts-list__item {
   display: flex;
   flex-direction: row;
 }
+
 .main .personal .contacts-list__item::before {
   content: "•";
   color: #63009c;
   margin-right: 4px;
 }
 
+.main .personal .contacts__about {
+  margin: 0 auto 0 auto;
+}
+
 ul.links {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  margin: 0 10% 0 10%;
+  margin: 0;
   padding: 0;
   position: relative;
 }
@@ -498,67 +508,51 @@ ul.links svg {
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
 }
-
 ul.links svg:hover {
   background-color: #ddeeff;
 }
-
 ul.links svg.github #border {
   fill: aliceblue;
 }
-
 ul.links svg.github:hover #background {
   fill: white;
 }
-
 ul.links svg.github:hover #border {
   fill: black;
 }
-
 ul.links svg.hacker-rank #border {
   fill: aliceblue;
 }
-
 ul.links svg.hacker-rank:hover #symbol {
   fill: white;
 }
-
 ul.links svg.hacker-rank:hover #border {
   fill: #2fc363;
 }
-
 ul.links svg.linked-in #border {
   fill: aliceblue;
 }
-
 ul.links svg.linked-in:hover #symbols {
   fill: white;
 }
-
 ul.links svg.linked-in:hover #border {
   fill: #0077b5;
 }
-
 ul.links svg.telegram #background {
   fill: aliceblue;
 }
-
 ul.links svg.telegram:hover #logo {
   fill: white;
 }
-
 ul.links svg.telegram:hover #background {
   fill: #039be5;
 }
-
 ul.links svg.vk #border {
   fill: aliceblue;
 }
-
 ul.links svg.vk:hover #symbols {
   fill: white;
 }
-
 ul.links svg.vk:hover #border {
   fill: #5181b8;
 }
@@ -567,12 +561,10 @@ ul.links svg.vk:hover #border {
   display: flex;
   flex-direction: column;
 }
-
 .main .timeline__item {
   display: flex;
   flex-direction: row;
 }
-
 .main .timeline__years {
   font-size: 22px;
   margin: auto 10px auto 10px;
