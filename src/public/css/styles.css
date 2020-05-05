@@ -562,15 +562,15 @@ template {
   flex-direction: row;
 }
 .main .timeline__first-item .timeline__last-line, .main .timeline__last-item .timeline__last-line {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0 10px 0 10px;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
+    position: relative;
+    width: 4px;
 }
 .main .timeline__first-item .timeline__last-line .last-line-visible, .main .timeline__last-item .timeline__last-line .last-line-visible {
   background-color: black;
-  width: 1.5px;
   height: 50%;
 }
 .main .timeline__first-item .timeline__last-line .last-line-visible-tech-first, .main .timeline__last-item .timeline__last-line .last-line-visible-tech-first {
@@ -583,13 +583,13 @@ template {
   height: 50%;
 }
 .main .timeline__first-item .timeline__last-line .circle, .main .timeline__last-item .timeline__last-line .circle {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: white;
-  border-radius: 8px;
-  border: black solid;
-  left: -5px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 8px;
+    border: black solid;
+    left: -6px;
 }
 .main .timeline__first-item .timeline__last-line .circle-tech, .main .timeline__last-item .timeline__last-line .circle-tech {
   border-color: #63009c;
@@ -615,12 +615,10 @@ main {
 .main h1 {
   text-align: center;
 }
-
 .main a {
   text-decoration: none;
   color: #35a1ff;
 }
-
 .main__column {
   flex-direction: column;
 }

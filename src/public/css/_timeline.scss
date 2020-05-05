@@ -99,10 +99,10 @@
         justify-content: space-around;
         margin: 0 10px 0 10px;
         position: relative;
+        width: 4px;
 
         .last-line-visible {
           background-color: black;
-          width: 1.5px;
           height: 50%;
 
           &-tech-first {
@@ -125,7 +125,7 @@
           background-color: white;
           border-radius: 8px;
           border: black solid;
-          left: -5px;
+          left: -6px;
 
           &-tech {
             border-color: $purple;
