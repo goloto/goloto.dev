@@ -475,92 +475,102 @@ template {
   margin: 0 0 0 20px;
 }
 .main .personal .contacts-list__item {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-
 .main .personal .contacts-list__item::before {
-    content: "•";
-    color: #63009c;
-    margin-right: 4px;
+  content: "•";
+  color: #63009c;
+  margin-right: 4px;
 }
 
 ul.links {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    margin: 0 10% 0 10%;
-    padding: 0;
-    position: relative;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 10% 0 10%;
+  padding: 0;
+  position: relative;
 }
-
 ul.links svg {
-    height: 50px;
-    fill: #63009c;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
+  height: 50px;
+  fill: #63009c;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
 }
 
 ul.links svg:hover {
-    background-color: #ddeeff;
+  background-color: #ddeeff;
 }
 
-ul.links circle {
-    transition: background-color 0.2s ease-in, fill 0.2s linear;
+ul.links svg.github #border {
+  fill: aliceblue;
 }
 
-ul.links svg.linked-in:hover {
-    fill: #0077b5;
+ul.links svg.github:hover #background {
+  fill: white;
 }
 
-ul.links svg.linked-in:hover rect {
-    fill: white;
-}
-
-ul.links svg.vk:hover {
-    fill: #5181b8;
-}
-
-ul.links svg.hacker-rank #symbol {
-    fill: #63009c;
+ul.links svg.github:hover #border {
+  fill: black;
 }
 
 ul.links svg.hacker-rank #border {
-    fill: aliceblue;
+  fill: aliceblue;
 }
 
 ul.links svg.hacker-rank:hover #symbol {
-    fill: white;
+  fill: white;
 }
 
 ul.links svg.hacker-rank:hover #border {
-    fill: #2fc363;
+  fill: #2fc363;
 }
 
-ul.links svg.github:hover {
-    fill: white;
+ul.links svg.linked-in #border {
+  fill: aliceblue;
 }
 
-ul.links svg.github:hover circle {
-    fill: black;
+ul.links svg.linked-in:hover #symbols {
+  fill: white;
 }
 
-ul.links svg.telegram:hover {
-    fill: #fff;
+ul.links svg.linked-in:hover #border {
+  fill: #0077b5;
 }
 
-ul.links svg.telegram:hover circle {
-    fill: #039be5;
+ul.links svg.telegram #background {
+  fill: aliceblue;
+}
+
+ul.links svg.telegram:hover #logo {
+  fill: white;
+}
+
+ul.links svg.telegram:hover #background {
+  fill: #039be5;
+}
+
+ul.links svg.vk #border {
+  fill: aliceblue;
+}
+
+ul.links svg.vk:hover #symbols {
+  fill: white;
+}
+
+ul.links svg.vk:hover #border {
+  fill: #5181b8;
 }
 
 .main .timeline {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .main .timeline__item {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .main .timeline__years {
@@ -693,25 +703,24 @@ main {
 .main .content-container {
   margin: 30px 0 30px 0;
 }
-
 .main .job-ready {
-    text-align: center;
+  text-align: center;
 }
 
 .narrow-container {
-    display: flex;
-    margin: auto;
-    width: 95%;
+  display: flex;
+  margin: auto;
+  width: 95%;
 }
 
 .transition-std {
-    transition: 0.2s ease-in, fill 0.2s linear;
+  transition: 0.2s ease-in, fill 0.2s linear;
 }
 
 @media (min-width: 1024px) {
-    .narrow-container {
-        width: 1024px;
-    }
+  .narrow-container {
+    width: 1024px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

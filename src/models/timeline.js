@@ -5,7 +5,7 @@ let timeline = [{
     },
     experience: {
         topLine: "Working for <a href='https://www.redbee.ru/' target='_blank'>Redbee</a>",
-        bottomLine: "JS • PHP • CSS • HTML • Git • BITRIX"
+        bottomLine: "JS • PHP • CSS • HTML • Git • Bitrix"
     }
 }, {
     year: {

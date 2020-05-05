@@ -17,27 +17,23 @@ ul.links {
     }
   }
 
-  circle {
-    transition: background-color 0.2s ease-in, fill 0.2s linear;
-  }
-
-  svg.linked-in:hover {
-    fill: #0077b5;
-
-    rect {
-      fill: white;
+  svg.github {
+    #border {
+      fill: aliceblue;
     }
-  }
 
-  svg.vk:hover {
-    fill: #5181b8;
+    &:hover {
+      #background {
+        fill: white;
+      }
+
+      #border {
+        fill: black;
+      }
+    }
   }
 
   svg.hacker-rank {
-    #symbol {
-      fill: $purple;
-    }
-
     #border {
       fill: aliceblue;
     }
@@ -53,19 +49,51 @@ ul.links {
     }
   }
 
-  svg.github:hover {
-    fill: white;
+  svg.linked-in {
+    #border {
+      fill: aliceblue;
+    }
 
-    circle {
-      fill: black;
+    &:hover {
+      #symbols {
+        fill: white;
+      }
+
+      #border {
+        fill: #0077b5;
+      }
     }
   }
 
-  svg.telegram:hover {
-    fill: #fff;
+  svg.telegram {
+    #background {
+      fill: aliceblue;
+    }
 
-    circle {
-      fill: #039be5;
+    &:hover {
+      #logo {
+        fill: white;
+      }
+
+      #background {
+        fill: #039be5;
+      }
+    }
+  }
+
+  svg.vk {
+    #border {
+      fill: aliceblue;
+    }
+
+    &:hover {
+      #symbols {
+        fill: white;
+      }
+
+      #border {
+        fill: #5181b8;
+      }
     }
   }
 }
