@@ -71,7 +71,7 @@ ul.links {
   position: relative;
 
   svg {
-    height: 45px;
+    height: 50px;
     fill: $purple;
     padding: 10px 20px 10px 20px;
     transition: background-color 0.2s ease-in, fill 0.2s linear;
@@ -80,6 +80,10 @@ ul.links {
     &:hover {
       background-color: #ddeeff;
     }
+  }
+
+  circle {
+    transition: background-color 0.2s ease-in, fill 0.2s linear;
   }
 
   svg.linked-in:hover {
@@ -96,5 +100,13 @@ ul.links {
 
   svg.github:hover {
     fill: black;
+  }
+
+  svg.telegram:hover {
+    circle {
+      fill: #039be5;
+    }
+
+    fill: #fff;
   }
 }
