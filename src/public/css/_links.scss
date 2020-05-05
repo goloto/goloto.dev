@@ -1,0 +1,71 @@
+ul.links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 10% 0 10%;
+  padding: 0;
+  position: relative;
+
+  svg {
+    height: 50px;
+    fill: $purple;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #ddeeff;
+    }
+  }
+
+  circle {
+    transition: background-color 0.2s ease-in, fill 0.2s linear;
+  }
+
+  svg.linked-in:hover {
+    fill: #0077b5;
+
+    rect {
+      fill: white;
+    }
+  }
+
+  svg.vk:hover {
+    fill: #5181b8;
+  }
+
+  svg.hacker-rank {
+    #symbol {
+      fill: $purple;
+    }
+
+    #border {
+      fill: aliceblue;
+    }
+
+    &:hover {
+      #symbol {
+        fill: white;
+      }
+
+      #border {
+        fill: #2fc363;
+      }
+    }
+  }
+
+  svg.github:hover {
+    fill: white;
+
+    circle {
+      fill: black;
+    }
+  }
+
+  svg.telegram:hover {
+    fill: #fff;
+
+    circle {
+      fill: #039be5;
+    }
+  }
+}

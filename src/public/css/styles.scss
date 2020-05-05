@@ -8,6 +8,7 @@ $desktopWidth: 1024px;
 @import "header";
 @import "footer";
 @import "personal";
+@import "links";
 @import "timeline";
 
 @font-face {
@@ -56,57 +57,12 @@ main {
   width: 95%;
 }
 
+.transition-std {
+  transition: 0.2s ease-in, fill 0.2s linear;
+}
+
 @media (min-width: 1024px) {
   .narrow-container {
     width: $desktopWidth;
-  }
-}
-
-ul.links {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  margin: 0 10% 0 10%;
-  padding: 0;
-  position: relative;
-
-  svg {
-    height: 50px;
-    fill: $purple;
-    padding: 10px 20px 10px 20px;
-    transition: background-color 0.2s ease-in, fill 0.2s linear;
-    border-radius: 10px;
-
-    &:hover {
-      background-color: #ddeeff;
-    }
-  }
-
-  circle {
-    transition: background-color 0.2s ease-in, fill 0.2s linear;
-  }
-
-  svg.linked-in:hover {
-    fill: #0077b5;
-  }
-
-  svg.vk:hover {
-    fill: #5181b8;
-  }
-
-  svg.hacker-rank:hover {
-    fill: #2fc363;
-  }
-
-  svg.github:hover {
-    fill: black;
-  }
-
-  svg.telegram:hover {
-    circle {
-      fill: #039be5;
-    }
-
-    fill: #fff;
   }
 }
