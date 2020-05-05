@@ -21,7 +21,7 @@ let timeline = [{
     },
     technologies: {
         topLine: "PHP",
-        bottomLine: ""
+        bottomLine: "Bitrix"
     }
 }, {
     year: {
