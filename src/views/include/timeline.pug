@@ -38,14 +38,16 @@ mixin timeline-last
 
         .timeline__item
             .timeline__description
-                .description
-                    if val.experience
+                if val.experience
+                    .description
                         .description__top-line !{expTopLine}
                         .description__bottom-line= val.experience.bottomLine
+                else
+                    .description
 
             .timeline__line
                 if val.experience
-                    .circle
+                    .circle.circle-experience.transition-std
 
             .timeline__years
                 if val.technologies
@@ -61,12 +63,17 @@ mixin timeline-last
 
             .timeline__line.timeline__line-tech
                 if val.technologies
-                    .circle.circle-tech
+                    .circle.circle-tech.transition-std
 
             .timeline__description
-                .description
-                    if val.technologies
+                if val.technologies
+                    .description
                         .description__top-line.description__top-line-tech= val.technologies.topLine
                         .description__bottom-line.description__bottom-line-tech= val.technologies.bottomLine
+                else if val.name
+                    .description
+                        .description__logo(class=val.name, href=val.link, target="_blank")
+                else
+                    .description
 
     +timeline-last

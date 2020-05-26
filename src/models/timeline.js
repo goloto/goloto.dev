@@ -1,4 +1,6 @@
 let timeline = [{
+    name: 'redbee',
+    link: 'https://www.redbee.ru/',
     year: {
         start: "2019",
         end: "now"
@@ -41,6 +43,8 @@ let timeline = [{
         bottomLine: "Introduction of cognitive technologies in the educational process"
     }
 }, {
+    name: 'uni-dubna',
+    link: 'https://int.uni-dubna.ru/',
     year: {
         start: "2018",
         end: "2019"
@@ -66,6 +70,8 @@ let timeline = [{
         bottomLine: ".NET Core • ASP.NET Core • MVC • SQL • Entity Framework • Bot Framework • Azure"
     }
 }, {
+    name: 'jinr',
+    link: 'http://www.jinr.ru/main-en/',
     year: {
         start: "2017"
     },

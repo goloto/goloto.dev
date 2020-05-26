@@ -34,17 +34,21 @@ ul.links {
   }
 
   svg.hacker-rank {
-    #border {
+    #background {
       fill: aliceblue;
     }
 
     &:hover {
-      #symbol {
+      #background {
+        fill: black;
+      }
+
+      #symbolOne {
         fill: white;
       }
 
-      #border {
-        fill: #2fc363;
+      #symbolTwo {
+        fill: #04b951;
       }
     }
   }

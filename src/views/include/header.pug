@@ -4,7 +4,7 @@ html
     body
         header.header
             .narrow-container
-                .header__logo goloto.dev
+                a.header__logo(href='/') goloto.dev
                 .header__menu
                     ul.menu
                         li.menu__item.transition-std
@@ -22,6 +22,8 @@ html
                                             a(href='/apps/mines') &#128163;mines
                         li.menu__item.transition-std
                             a(href='/about') about
+                        li.menu__item.transition-std
+                            a(href='/bio') biography
 
         main.main
             .narrow-container.main__column

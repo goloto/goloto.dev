@@ -347,6 +347,8 @@ template {
   font-size: 36px;
   padding: 10px;
   font-weight: 800;
+  color: white;
+  text-decoration: none;
 }
 .header__menu .menu {
   display: flex;
@@ -474,22 +476,18 @@ template {
   justify-content: center;
   margin: 0 0 0 20px;
 }
-
 .main .personal .contacts-list {
   padding: 0;
 }
-
 .main .personal .contacts-list__item {
   display: flex;
   flex-direction: row;
 }
-
 .main .personal .contacts-list__item::before {
   content: "•";
   color: #63009c;
   margin-right: 4px;
 }
-
 .main .personal .contacts__about {
   margin: 0 auto 0 auto;
 }
@@ -520,14 +518,17 @@ ul.links svg.github:hover #background {
 ul.links svg.github:hover #border {
   fill: black;
 }
-ul.links svg.hacker-rank #border {
+ul.links svg.hacker-rank #background {
   fill: aliceblue;
 }
-ul.links svg.hacker-rank:hover #symbol {
+ul.links svg.hacker-rank:hover #background {
+  fill: black;
+}
+ul.links svg.hacker-rank:hover #symbolOne {
   fill: white;
 }
-ul.links svg.hacker-rank:hover #border {
-  fill: #2fc363;
+ul.links svg.hacker-rank:hover #symbolTwo {
+  fill: #04b951;
 }
 ul.links svg.linked-in #border {
   fill: aliceblue;
@@ -565,6 +566,15 @@ ul.links svg.vk:hover #border {
   display: flex;
   flex-direction: row;
 }
+.main .timeline__item:hover .timeline__description .description .description__logo {
+  width: 100%;
+}
+.main .timeline__item:hover .timeline__line .circle-experience {
+  background-color: black;
+}
+.main .timeline__item:hover .timeline__line .circle-tech {
+  background-color: #63009c;
+}
 .main .timeline__years {
   font-size: 22px;
   margin: auto 10px auto 10px;
@@ -597,20 +607,28 @@ ul.links svg.vk:hover #border {
   height: 8px;
   background-color: white;
   border-radius: 8px;
-  border: black solid;
+  border: solid;
   top: calc(50% - 6px);
 }
 .main .timeline__line .circle-tech {
   border-color: #63009c;
 }
+.main .timeline__line .circle-experience {
+  border-color: black;
+}
 .main .timeline__description {
   width: 100%;
+  position: relative;
 }
 .main .timeline__description .description {
   display: flex;
   flex-direction: column;
   margin: 10px;
   text-align: right;
+  height: calc(100% - 20px);
+}
+.main .timeline__description .description__top-line {
+  z-index: 1;
 }
 .main .timeline__description .description__top-line-tech {
   color: #63009c;
@@ -619,9 +637,27 @@ ul.links svg.vk:hover #border {
   font-weight: 600;
   text-align: left;
 }
+.main .timeline__description .description__logo {
+  height: 100%;
+  width: 0;
+  transition: 0.4s ease-in, 0.4s ease-out;
+}
+.main .timeline__description .description .redbee {
+  background: url("/img/redbee-logo.svg") left no-repeat;
+  background-size: 150px;
+}
+.main .timeline__description .description .uni-dubna {
+  background: url("/img/unidubna-logo.svg") left no-repeat;
+  background-size: 38px;
+}
+.main .timeline__description .description .jinr {
+  background: url("/img/jinr-logo.svg") left no-repeat;
+  background-size: 53px;
+}
 .main .timeline__description .description__bottom-line {
   font-size: 14px;
   color: gray;
+  z-index: 1;
 }
 .main .timeline__description .description__bottom-line-tech {
   color: #4c0077;
@@ -683,7 +719,7 @@ main {
   background-color: aliceblue;
 }
 .main h1 {
-  text-align: center;
+  justify-content: center;
 }
 .main a {
   text-decoration: none;
@@ -698,6 +734,10 @@ main {
 .main .job-ready {
   text-align: center;
 }
+.main .wrap-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .narrow-container {
   display: flex;
@@ -706,7 +746,7 @@ main {
 }
 
 .transition-std {
-  transition: 0.2s ease-in, fill 0.2s linear;
+  transition: 0.2s ease-in;
 }
 
 @media (min-width: 1024px) {

@@ -30,7 +30,7 @@ main {
   background-color: aliceblue;
 
   h1 {
-    text-align: center;
+    justify-content: center;
   }
 
   a {
@@ -49,6 +49,11 @@ main {
   .job-ready {
     text-align: center;
   }
+
+  .wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .narrow-container {
@@ -58,7 +63,7 @@ main {
 }
 
 .transition-std {
-  transition: 0.2s ease-in, fill 0.2s linear;
+  transition: 0.2s ease-in;
 }
 
 @media (min-width: 1024px) {
