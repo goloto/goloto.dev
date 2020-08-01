@@ -3,12 +3,65 @@
   background-color: $purple;
   color: white;
 
+  &:hover {
+    .logo {
+      &__dots {
+        .dot-top {
+          margin-top: 0;
+          opacity: 0;
+          transition-delay: 0s;
+        }
+
+        .dot-bottom {
+          margin-top: 25px;
+          opacity: 1;
+          transition-delay: .2s;
+        }
+      }
+    }
+  }
+
   &__logo {
-    font-size: 36px;
-    padding: 10px;
-    font-weight: 800;
-    color: white;
-    text-decoration: none;
+    .logo {
+      display: flex;
+      flex-direction: row;
+      padding: 0 10px 0 10px;
+
+      &__link {
+        color: white;
+        text-decoration: none;
+        display: flex;
+      }
+
+      &__text {
+        padding: 10px 0 10px 0;
+        font-size: 36px;
+        font-weight: 800;
+      }
+
+      &__dots {
+        width: 21px;
+
+        .dot-top, .dot-bottom {
+          transition: .2s ease-in;
+          height: 0;
+          position: absolute;
+        }
+
+        .dot-top {
+          opacity: 1;
+          margin: 36px 7px 0 7px;
+          transition-delay: .2s;
+          border: white solid 4px;
+          border-radius: 4px;
+        }
+
+        .dot-bottom {
+          opacity: 0;
+          margin-top: 45px;
+        }
+      }
+    }
   }
 
   &__menu {
@@ -29,19 +82,35 @@
             visibility: visible;
             opacity: 1;
           }
+
+          .link {
+            padding: 0 7px 0 7px;
+
+            .link__icon {
+              width: 22px;
+              opacity: 1;
+            }
+          }
         }
 
         &:active {
           background-color: $purpleDoubleHover;
         }
 
-        a {
+        .link {
           display: flex;
           align-items: center;
           height: 100%;
-          padding: 0 10px 0 10px;
+          padding: 0 18px 0 18px;
           text-decoration: none;
           color: white;
+          transition: .2s ease-in;
+
+          &__icon {
+            width: 0;
+            opacity: 0;
+            transition: .2s ease-in;
+          }
         }
 
         .pop-up-menu {
@@ -66,7 +135,7 @@
               background-color: $purpleDoubleHover;
             }
 
-            a {
+            .link {
               padding: 12px;
               height: auto;
             }

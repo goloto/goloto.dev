@@ -1,33 +1,33 @@
 mixin timeline-first
-    .timeline__first-item
+    .timeline__item
         .timeline__description
-            .description Your company?
-        .timeline__last-line
-            .last-line-invisible
-            .last-line-visible
+            .description.description-column Your company?
+        .timeline__line
+            .line-invisible
+            .line-visible
             .circle
         .timeline__years
             .years-plug
                 .plug 9999
-        .timeline__last-line
-            .last-line-invisible
-            .last-line-visible.last-line-visible-tech-first
+        .timeline__line.tech-line
+            .line-invisible
+            .line-visible
         .timeline__description
 
 mixin timeline-last
-    .timeline__last-item
+    .timeline__item
         .timeline__description
-            .description Realized myself as a developer
-        .timeline__last-line
-            .last-line-visible
-            .last-line-invisible
+            .description.description-column Realized myself as a developer
+        .timeline__line
+            .line-visible
+            .line-invisible
             .circle
         .timeline__years
             .years-plug
                 .plug 0000
-        .timeline__last-line
-            .last-line-visible.last-line-visible-tech-last
-            .last-line-invisible
+        .timeline__line.tech-line
+            .line-visible
+            .line-invisible
         .timeline__description
 
 .timeline
@@ -39,11 +39,15 @@ mixin timeline-last
         .timeline__item
             .timeline__description
                 if val.experience
-                    .description
+                    .description.description-column
                         .description__top-line !{expTopLine}
                         .description__bottom-line= val.experience.bottomLine
+                else if val.techLogoName
+                    .description.description-row
+                        .description__empty
+                        a.description__logo(class=val.techLogoName, href=val.link, target="_blank")
                 else
-                    .description
+                    .description.description-column
 
             .timeline__line
                 if val.experience
@@ -67,13 +71,13 @@ mixin timeline-last
 
             .timeline__description
                 if val.technologies
-                    .description
+                    .description.description-column
                         .description__top-line.description__top-line-tech= val.technologies.topLine
                         .description__bottom-line.description__bottom-line-tech= val.technologies.bottomLine
-                else if val.name
-                    .description
-                        .description__logo(class=val.name, href=val.link, target="_blank")
+                else if val.experienceLogoName
+                    .description.description-column
+                        a.description__logo(class=val.experienceLogoName, href=val.link, target="_blank")
                 else
-                    .description
+                    .description.description-column
 
     +timeline-last
