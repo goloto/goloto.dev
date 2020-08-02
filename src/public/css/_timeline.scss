@@ -226,3 +226,47 @@
     }
   }
 }
+
+@media screen and (max-width: 740px) {
+  .main {
+    .timeline {
+      .timeline__item.timeline__item-experience {
+        flex-direction: row-reverse;
+
+        .timeline__line.timeline__line-tech {
+          display: none;
+        }
+
+        .timeline__description.timeline__description-tech {
+          display: none;
+        }
+      }
+
+      .timeline__item.timeline__item-tech {
+        .timeline__line.timeline__line-experience {
+          display: none;
+        }
+
+        .timeline__line.timeline__line-tech {
+          background: linear-gradient(black 0%, $purple 30%, $purple 70%, black 100%);
+        }
+
+        .timeline__description.timeline__description-experience {
+          display: none;
+        }
+      }
+
+      .timeline__item {
+        .timeline__description {
+          .description {
+            text-align: left;
+          }
+        }
+
+        .timeline__line.tech-line {
+          display: none;
+        }
+      }
+    }
+  }
+}
