@@ -2,28 +2,49 @@ doctype html
 html
     include ./head
     body
-        header.header
+        header.header(id='header')
             .narrow-container
-                a.header__logo(href='/') goloto.dev
+                .header__logo
+                    .logo
+                        a.logo__link(href='/')
+                            .logo__text goloto
+                            .logo__dots
+                                .dot-top
+                                .dot-bottom(id='logo-emoji')
+                            .logo__text dev
                 .header__menu
                     ul.menu
                         li.menu__item.transition-std
-                            a(href='/projects') projects
+                            a.link(href='/projects')
+                                .link__icon &#128194;
+                                .link__text projects
                         li.menu__item.transition-std
-                            a(href='/apps') apps
+                            a.link(href='/apps')
+                                .link__icon &#128230;
+                                .link__text apps
                             .header__pop-up-menu
                                 ul.pop-up-menu
                                     .narrow-container
                                         li.pop-up-menu__item.transition-std
-                                            a(href='/apps/calc') ➗calc
+                                            a.link(href='/apps/calc')
+                                                .link__icon ➗
+                                                .link__text calc
                                         li.pop-up-menu__item.transition-std
-                                            a(href='/apps/404') &#128030;404
+                                            a.link(href='/apps/404')
+                                                .link__icon &#128030;
+                                                .link__text 404
                                         li.pop-up-menu__item.transition-std
-                                            a(href='/apps/mines') &#128163;mines
+                                            a.link(href='/apps/mines')
+                                                .link__icon &#128163;
+                                                .link__text mines
                         li.menu__item.transition-std
-                            a(href='/about') about
+                            a.link(href='/about')
+                                .link__icon
+                                .link__text about
                         li.menu__item.transition-std
-                            a(href='/bio') biography
+                            a.link(href='/bio')
+                                .link__icon &#129334;
+                                .libk__text biography
 
         main.main
             .narrow-container.main__column

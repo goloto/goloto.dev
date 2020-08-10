@@ -1,9 +1,10 @@
 .footer {
   display: flex;
-  background-color: aliceblue;
+  background-color: $backgroundColor;
   border-top: solid;
   border-color: $purple;
   color: gray;
+  overflow-y: auto;
 
   &__columns {
     display: flex;
@@ -11,36 +12,44 @@
     width: 100%;
   }
 
-  .menu {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0 10px 0 0;
+  &__menu {
+    padding-right: 10px;
 
-    &__item {
-      background-color: aliceblue;
+    .menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0 10px 0 0;
 
-      &:hover {
-        background-color: #ddeeff;
-      }
+      &__item {
+        background-color: $backgroundColor;
 
-      a {
-        display: flex;
-        align-items: center;
-        height: 50px;
-        padding: 0 10px 0 10px;
-        text-decoration: none;
-        margin: 0;
-        color: gray;
+        &:hover {
+          background-color: #ddeeff;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          height: 50px;
+          padding: 0 10px 0 10px;
+          text-decoration: none;
+          margin: 0;
+          color: gray;
+        }
       }
     }
   }
 
   &__postscript {
-    margin: auto 0 auto 0;
+    display: flex;
+    height: 50px;
+    padding-right: 10px;
 
     .covid {
+      display: flex;
       color: seagreen;
+      align-items: center;
 
       &:hover {
         &__smile {
@@ -50,15 +59,16 @@
         }
       }
 
-      &__smile {
-        opacity: 0;
-        visibility: hidden;
-      }
-
       svg {
         fill: seagreen;
         height: 12px;
       }
+    }
+
+    .creator {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
     }
   }
 }

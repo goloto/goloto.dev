@@ -29,14 +29,59 @@
 
           &::before {
             content: "•";
+            width: 18px;
             color: $purple;
-            margin-right: 4px;
+            margin-left: 6px;
+            margin-right: 3px;
+            transition: .2s ease-in, .2s ease-out;
           }
         }
       }
 
       &__about {
+        // temporary hide
+        display: none;
         margin: 0 auto 0 auto;
+      }
+
+      &__age {
+        &:hover {
+          &::before {
+            content: '⏳';
+            margin-left: 2.5px;
+            margin-right: 6.5px;
+          }
+        }
+      }
+
+      &__location {
+        &:hover {
+          &::before {
+            content: '🧭';
+            margin-left: 0;
+            margin-right: 9px;
+          }
+        }
+      }
+
+      &__mail {
+        &:hover {
+          &::before {
+            content: '📧';
+            margin-left: 0;
+            margin-right: 9px;
+          }
+        }
+      }
+
+      &__phone {
+        &:hover {
+          &::before {
+            content: '📞';
+            margin-left: 0;
+            margin-right: 9px;
+          }
+        }
       }
     }
   }

@@ -2,6 +2,8 @@ $purple: #63009c;
 $purpleHover: #4c0077;
 $purpleDoubleHover: #3a005b;
 
+$backgroundColor: aliceblue;
+
 $desktopWidth: 1024px;
 
 @import "normalize";
@@ -10,6 +12,7 @@ $desktopWidth: 1024px;
 @import "personal";
 @import "links";
 @import "timeline";
+@import "404";
 
 @font-face {
   font-family: JetBrains Mono;
@@ -27,7 +30,7 @@ main {
 }
 
 .main {
-  background-color: aliceblue;
+  background-color: $backgroundColor;
 
   h1 {
     justify-content: center;

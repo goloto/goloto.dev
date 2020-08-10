@@ -13,6 +13,10 @@
             .description__logo {
               width: 100%;
             }
+
+            .false-description {
+              width: 0;
+            }
           }
         }
 
@@ -88,7 +92,6 @@
 
       .description {
         display: flex;
-        flex-direction: column;
         margin: 10px;
         text-align: right;
         height: calc(100% - 20px);
@@ -108,12 +111,18 @@
         &__logo {
           height: 100%;
           width: 0;
-          transition: .4s ease-in, .4s ease-out;
+          transition: 0.6s ease-out;
+        }
+
+        &__empty {
+          height: 100%;
+          width: 100%;
+          transition: 0.6s ease-out;
         }
 
         .redbee {
           background: url("/img/redbee-logo.svg") left no-repeat;
-          background-size: 150px;
+          background-size: 148px;
         }
 
         .uni-dubna {
@@ -123,6 +132,21 @@
 
         .jinr {
           background: url("/img/jinr-logo.svg") left no-repeat;
+          background-size: 53px;
+        }
+
+        .js {
+          background: url("/img/js-logo.svg") right no-repeat;
+          background-size: 53px;
+        }
+
+        .php {
+          background: url("/img/php-logo.svg") right no-repeat;
+          background-size: 53px;
+        }
+
+        .c-sharp {
+          background: url("/img/c-sharp-logo.svg") right no-repeat;
           background-size: 53px;
         }
 
@@ -137,13 +161,21 @@
           }
         }
       }
+
+      .description-row {
+        flex-direction: row;
+      }
+
+      .description-column {
+        flex-direction: column;
+      }
     }
 
-    &__first-item, &__last-item {
+    &__item:first-child, &__item:last-child {
       display: flex;
       flex-direction: row;
 
-      .timeline__last-line {
+      .timeline__line {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -151,28 +183,21 @@
         position: relative;
         width: 4px;
 
-        .last-line-visible {
+        .line-visible {
           background-color: black;
           height: 50%;
-
-          &-tech-first {
-            background: linear-gradient(0deg, rgba(99, 0, 156, 1) 0%, rgba(240, 248, 255, 1) 100%);
-          }
-
-          &-tech-last {
-            background: linear-gradient(0deg, rgba(240, 248, 255, 1) 0%, rgba(99, 0, 156, 1) 100%);;
-          }
         }
 
-        .last-line-invisible {
+        .line-invisible {
           height: 50%;
+          background-color: $backgroundColor;
         }
 
         .circle {
           position: absolute;
           width: 8px;
           height: 8px;
-          background-color: white;
+          background-color: $backgroundColor;
           border-radius: 8px;
           border: black solid;
           left: -6px;
@@ -180,6 +205,66 @@
           &-tech {
             border-color: $purple;
           }
+        }
+      }
+    }
+
+    &__item:first-child {
+      .tech-line {
+        .line-visible {
+          background: linear-gradient(0deg, rgba(99, 0, 156, 1) 0%, rgba(240, 248, 255, 1) 100%);
+        }
+      }
+    }
+
+    &__item:last-child {
+      .tech-line {
+        .line-visible {
+          background: linear-gradient(0deg, rgba(240, 248, 255, 1) 0%, rgba(99, 0, 156, 1) 100%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .main {
+    .timeline {
+      .timeline__item.timeline__item-experience {
+        flex-direction: row-reverse;
+
+        .timeline__line.timeline__line-tech {
+          display: none;
+        }
+
+        .timeline__description.timeline__description-tech {
+          display: none;
+        }
+      }
+
+      .timeline__item.timeline__item-tech {
+        .timeline__line.timeline__line-experience {
+          display: none;
+        }
+
+        .timeline__line.timeline__line-tech {
+          background: linear-gradient(black 0%, $purple 30%, $purple 70%, black 100%);
+        }
+
+        .timeline__description.timeline__description-experience {
+          display: none;
+        }
+      }
+
+      .timeline__item {
+        .timeline__description {
+          .description {
+            text-align: left;
+          }
+        }
+
+        .timeline__line.tech-line {
+          display: none;
         }
       }
     }
