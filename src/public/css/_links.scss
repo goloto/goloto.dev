@@ -1,10 +1,11 @@
 ul.links {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   position: relative;
+  flex-wrap: wrap;
 
   svg {
     height: 50px;
