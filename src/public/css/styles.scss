@@ -6,13 +6,7 @@ $backgroundColor: aliceblue;
 
 $desktopWidth: 1024px;
 
-@import "normalize";
-@import "header";
-@import "footer";
-@import "personal";
-@import "links";
-@import "timeline";
-@import "404";
+@import "import";
 
 @font-face {
   font-family: JetBrains Mono;
@@ -32,6 +26,10 @@ main {
 .main {
   background-color: $backgroundColor;
 
+  &__column {
+    flex-direction: column;
+  }
+
   h1 {
     justify-content: center;
   }
@@ -41,21 +39,16 @@ main {
     color: #35a1ff;
   }
 
-  &__column {
-    flex-direction: column;
-  }
-
-  .content-container {
-    margin: 30px 0 30px 0;
-  }
-
   .job-ready {
     text-align: center;
   }
+}
 
-  .wrap-container {
-    display: flex;
-    flex-wrap: wrap;
+section.content-container {
+  margin: 0 0 50px 0;
+
+  &:first-child {
+    margin: 50px 0;
   }
 }
 
@@ -65,12 +58,22 @@ main {
   width: 95%;
 }
 
-.transition-std {
+*[class*="to-change_"] {
   transition: 0.2s ease-in;
 }
 
 @media (min-width: 1024px) {
   .narrow-container {
     width: $desktopWidth;
+  }
+}
+
+@media (max-width: 770px) {
+  section.content-container {
+    margin: 0 0 20px 0;
+
+    &:first-child {
+      margin: 20px 0;
+    }
   }
 }
