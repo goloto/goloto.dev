@@ -77,7 +77,7 @@
             border-radius: 5px;
             padding: 4px;
             color: white;
-            margin: 2px;
+            margin: 2px 4px 2px 0;
 
             &_bitrix {
               background-color: #3bc8f5;
@@ -170,6 +170,12 @@
 
           .tags {
             width: auto;
+          }
+
+          .information {
+            h2.name {
+              font-size: 20px;
+            }
           }
         }
       }

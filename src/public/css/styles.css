@@ -345,17 +345,14 @@ template {
   overflow-y: auto;
   transition: background-color 0.2s ease-in;
 }
-
 .header .narrow-container {
   flex-wrap: wrap;
 }
-
 .header:hover .logo__dots .dot-top {
   margin-top: 0;
   opacity: 0;
   transition-delay: 0s;
 }
-
 .header:hover .logo__dots .dot-bottom {
   margin-top: 25px;
   opacity: 1;
@@ -391,16 +388,13 @@ template {
   border: white solid 4px;
   border-radius: 4px;
 }
-
 .header__logo .logo__dots .dot-bottom {
   opacity: 0;
   margin-top: 45px;
 }
-
 .header__menu {
   min-height: 42px;
 }
-
 .header__menu .menu {
   display: flex;
   margin: 0;
@@ -409,48 +403,38 @@ template {
   height: 100%;
   background-color: #63009c;
 }
-
 .header__menu .menu__item {
   transition: 0.2s ease-in;
 }
-
 .header__menu .menu__item:hover {
   background-color: #4c0077;
 }
-
 .header__menu .menu__item:hover .pop-up-menu {
   visibility: visible;
   opacity: 1;
 }
-
 .header__menu .menu__item:hover .pop-up-menu__item {
   transition: 0.2s ease-in;
 }
-
 .header__menu .menu__item:hover .pop-up-menu__item:hover .link {
   padding: 12px 7px;
 }
-
 .header__menu .menu__item:hover .pop-up-menu__item:hover .link__icon {
   width: 22px;
   opacity: 1;
 }
-
 .header__menu .menu__item:hover .pop-up-menu__item .link__icon {
   width: 0;
   opacity: 0;
 }
-
 .header__menu .menu__item:hover .link {
   padding: 0 7px 0 7px;
   cursor: pointer;
 }
-
 .header__menu .menu__item:hover .link__icon {
   width: 22px;
   opacity: 1;
 }
-
 .header__menu .menu__item:active {
   background-color: #3a005b;
 }
@@ -622,7 +606,6 @@ ul.links {
   position: relative;
   flex-wrap: wrap;
 }
-
 ul.links svg {
   height: 50px;
   fill: #63009c;
@@ -630,19 +613,15 @@ ul.links svg {
   border-radius: 10px;
   transition: 0.2s ease-in;
 }
-
 ul.links svg > * {
   transition: 0.2s ease-in;
 }
-
 ul.links svg:hover {
   background-color: #ddeeff;
 }
-
 ul.links svg.github #border {
   fill: aliceblue;
 }
-
 ul.links svg.github:hover #background {
   fill: white;
 }
@@ -693,32 +672,25 @@ ul.links svg.vk:hover #border {
   display: flex;
   flex-direction: column;
 }
-
 .main .timeline__item {
   display: flex;
   flex-direction: row;
 }
-
 .main .timeline__item_tech {
   color: #63009c;
 }
-
 .main .timeline__item:hover .timeline__description .description .description__logo {
   width: 100%;
 }
-
 .main .timeline__item:hover .timeline__description .description .false-description {
   width: 0;
 }
-
 .main .timeline__item:hover .timeline__line .circle_experience {
   background-color: black;
 }
-
 .main .timeline__item:hover .timeline__line .circle_tech {
   background-color: #63009c;
 }
-
 .main .timeline__years {
   font-size: 22px;
   margin: auto 10px auto 10px;
@@ -731,7 +703,6 @@ ul.links svg.vk:hover #border {
 .main .timeline__years .years-plug .plug {
   color: transparent;
 }
-
 .main .timeline__line {
   display: flex;
   justify-content: space-around;
@@ -740,11 +711,9 @@ ul.links svg.vk:hover #border {
   background-color: black;
   width: 4px;
 }
-
 .main .timeline__line_tech {
   background-color: #63009c;
 }
-
 .main .timeline__line .circle {
   position: absolute;
   width: 8px;
@@ -754,16 +723,13 @@ ul.links svg.vk:hover #border {
   border: solid;
   top: calc(50% - 6px);
 }
-
 .main .timeline__line .circle_tech {
   border-color: #63009c;
 }
-
 .main .timeline__line .circle_experience {
   border-color: black;
   transition: 0.2s ease-in;
 }
-
 .main .timeline__description {
   width: 100%;
   position: relative;
@@ -774,18 +740,15 @@ ul.links svg.vk:hover #border {
   text-align: right;
   height: calc(100% - 20px);
 }
-
 .main .timeline__description .description__top-line {
   z-index: 1;
 }
-
 .main .timeline__description .description__top-line_tech {
   font-size: 22px;
   line-height: 32px;
   font-weight: 600;
   text-align: left;
 }
-
 .main .timeline__description .description__logo {
   height: 100%;
   width: 0;
@@ -820,18 +783,15 @@ ul.links svg.vk:hover #border {
   background: url("/img/c-sharp-logo.svg") right no-repeat;
   background-size: 53px;
 }
-
 .main .timeline__description .description__bottom-line {
   font-size: 14px;
   color: gray;
   z-index: 1;
 }
-
 .main .timeline__description .description__bottom-line_tech {
   color: #4c0077;
   text-align: left;
 }
-
 .main .timeline__description .description-row {
   flex-direction: row;
 }
@@ -842,7 +802,6 @@ ul.links svg.vk:hover #border {
   display: flex;
   flex-direction: row;
 }
-
 .main .timeline__item:first-child .timeline__line, .main .timeline__item:last-child .timeline__line {
   display: flex;
   flex-direction: column;
@@ -851,17 +810,14 @@ ul.links svg.vk:hover #border {
   position: relative;
   width: 4px;
 }
-
 .main .timeline__item:first-child .timeline__line .line_visible, .main .timeline__item:last-child .timeline__line .line_visible {
   background-color: black;
   height: 50%;
 }
-
 .main .timeline__item:first-child .timeline__line .line-invisible, .main .timeline__item:last-child .timeline__line .line-invisible {
   height: 50%;
   background-color: aliceblue;
 }
-
 .main .timeline__item:first-child .timeline__line .circle, .main .timeline__item:last-child .timeline__line .circle {
   position: absolute;
   width: 8px;
@@ -871,15 +827,12 @@ ul.links svg.vk:hover #border {
   border: black solid;
   left: -6px;
 }
-
 .main .timeline__item:first-child .timeline__line .circle_tech, .main .timeline__item:last-child .timeline__line .circle_tech {
   border-color: #63009c;
 }
-
 .main .timeline__item:first-child .tech-line .line_visible {
   background: linear-gradient(0deg, #63009c 0%, aliceblue 100%);
 }
-
 .main .timeline__item:last-child .tech-line .line_visible {
   background: linear-gradient(0deg, aliceblue 0%, #63009c 100%);
 }
@@ -902,11 +855,9 @@ ul.links svg.vk:hover #border {
   .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_tech {
     background: linear-gradient(black 0%, #63009c 30%, #63009c 70%, black 100%);
   }
-
   .main .timeline .timeline__item .timeline__description .description {
     text-align: left;
   }
-
   .main .timeline .timeline__item .timeline__line.tech-line {
     display: none;
   }
@@ -926,43 +877,35 @@ ul.links svg.vk:hover #border {
 .main h1 {
   text-align: center;
 }
-
 .main ul.projects {
   list-style: none;
   padding: 0;
   margin: 0 auto;
 }
-
 .main ul.projects .project {
   display: grid;
   grid-template-columns: 100px 22px auto;
 }
-
 .main ul.projects .project:first-child .project__line {
   background: linear-gradient(aliceblue, #63009c, #63009c);
 }
-
 .main ul.projects .project:last-child .project__line {
   background: linear-gradient(#63009c, #63009c, aliceblue);
 }
-
 .main ul.projects .project > * {
   margin: 0 10px;
   padding: 20px 0;
 }
-
 .main ul.projects .project__date {
   font-size: 13px;
   color: gray;
   display: flex;
 }
-
 .main ul.projects .project__date .date {
   text-align: right;
   width: 85px;
   margin: auto 0;
 }
-
 .main ul.projects .project__line {
   display: flex;
   position: relative;
@@ -970,7 +913,6 @@ ul.links svg.vk:hover #border {
   width: 2px;
   background-color: #63009c;
 }
-
 .main ul.projects .project__line .circle {
   position: absolute;
   width: 8px;
@@ -980,12 +922,10 @@ ul.links svg.vk:hover #border {
   border-radius: 8px;
   top: calc(50% - 6px);
 }
-
 .main ul.projects .project__information {
   display: grid;
   grid-template-columns: 160px auto;
 }
-
 .main ul.projects .project__information .tags {
   list-style: none;
   font-size: 14px;
@@ -994,70 +934,56 @@ ul.links svg.vk:hover #border {
   display: flex;
   flex-wrap: wrap;
 }
-
 .main ul.projects .project__information .tags .tag {
   display: flex;
   border: solid 0;
   border-radius: 5px;
   padding: 4px;
   color: white;
-  margin: 2px;
+  margin: 2px 4px 2px 0;
 }
-
 .main ul.projects .project__information .tags .tag_bitrix {
   background-color: #3bc8f5;
 }
-
 .main ul.projects .project__information .tags .tag_modx {
   background-color: #6bad1e;
 }
-
 .main ul.projects .project__information .tags .tag_laravel {
   background-color: #FF2D20;
 }
-
 .main ul.projects .project__information .tags .tag_integration {
   background-color: darkviolet;
 }
-
 .main ul.projects .project__information .tags .tag_ui {
   background-color: lightseagreen;
 }
-
 .main ul.projects .project__information .tags .tag_seo {
   background-color: orangered;
 }
-
 .main ul.projects .project__information .tags .tag_features {
   background-color: indianred;
 }
-
 .main ul.projects .project__information .tags .tag_deploy {
   background-color: slategray;
 }
-
 .main ul.projects .project__information .tags .tag_spec {
   background-color: saddlebrown;
 }
-
 .main ul.projects .project__information .information {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .main ul.projects .project__information .information h2.name {
   font-size: 22px;
   line-height: 32px;
   font-weight: 600;
   margin: 0;
 }
-
 .main ul.projects .project__information .information h2.name img.icon {
   height: 16px;
   margin: 0 6px 0 0;
 }
-
 .main ul.projects .project__information .information .description {
   font-size: 14px;
   color: gray;
@@ -1067,11 +993,9 @@ ul.links svg.vk:hover #border {
   .main ul.projects .project {
     grid-template-columns: 40px 22px auto;
   }
-
   .main ul.projects .project > * {
     margin: 0 5px;
   }
-
   .main ul.projects .project__date {
     padding: 0;
     margin: 0;
@@ -1089,13 +1013,15 @@ ul.links svg.vk:hover #border {
   .main ul.projects .project__information .tags {
     width: auto;
   }
-}
 
+  .main ul.projects .project__information .information h2.name {
+    font-size: 20px;
+  }
+}
 @font-face {
   font-family: JetBrains Mono;
   src: url("fonts/JetBrainsMono-Regular.ttf");
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -1109,20 +1035,16 @@ main {
 .main {
   background-color: aliceblue;
 }
-
 .main__column {
   flex-direction: column;
 }
-
 .main h1 {
   justify-content: center;
 }
-
 .main a {
   text-decoration: none;
   color: #35a1ff;
 }
-
 .main .job-ready {
   text-align: center;
 }
@@ -1130,7 +1052,6 @@ main {
 section.content-container {
   margin: 0 0 50px 0;
 }
-
 section.content-container:first-child {
   margin: 50px 0;
 }
@@ -1150,12 +1071,10 @@ section.content-container:first-child {
     width: 1024px;
   }
 }
-
 @media (max-width: 770px) {
   section.content-container {
     margin: 0 0 20px 0;
   }
-
   section.content-container:first-child {
     margin: 20px 0;
   }
