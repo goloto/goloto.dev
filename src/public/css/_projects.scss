@@ -1,0 +1,178 @@
+.main {
+  h1 {
+    text-align: center;
+  }
+
+  ul.projects {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+
+    .project {
+      display: grid;
+      grid-template-columns: 100px 22px auto;
+
+      &:first-child {
+        .project__line {
+          background: linear-gradient(aliceblue, $purple, $purple);
+        }
+      }
+
+      &:last-child {
+        .project__line {
+          background: linear-gradient($purple, $purple, aliceblue);
+        }
+      }
+
+      & > * {
+        margin: 0 10px;
+        padding: 20px 0;
+      }
+
+      &__date {
+        font-size: 13px;
+        color: gray;
+        display: flex;
+
+        .date {
+          text-align: right;
+          width: 85px;
+          margin: auto 0;
+        }
+      }
+
+      &__line {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        width: 2px;
+        background-color: $purple;
+
+        .circle {
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background-color: aliceblue;
+          border: solid $purple;
+          border-radius: 8px;
+          top: calc(50% - 6px);
+        }
+      }
+
+      &__information {
+        display: grid;
+        grid-template-columns: 160px auto;
+
+        .tags {
+          list-style: none;
+          font-size: 14px;
+          padding: 0;
+          margin: 0 10px 0 0;
+          display: flex;
+          flex-wrap: wrap;
+
+          .tag {
+            display: flex;
+            border: solid 0;
+            border-radius: 5px;
+            padding: 4px;
+            color: white;
+            margin: 2px;
+
+            &_bitrix {
+              background-color: #3bc8f5;
+            }
+
+            &_modx {
+              background-color: #6bad1e;
+            }
+
+            &_laravel {
+              background-color: #FF2D20;
+            }
+
+            &_integration {
+              background-color: darkviolet;
+            }
+
+            &_ui {
+              background-color: lightseagreen;
+            }
+
+            &_seo {
+              background-color: orangered;
+            }
+
+            &_features {
+              background-color: indianred;
+            }
+
+            &_deploy {
+              background-color: slategray;
+            }
+
+            &_spec {
+              background-color: saddlebrown;
+            }
+          }
+        }
+
+        .information {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h2.name {
+            font-size: 22px;
+            line-height: 32px;
+            font-weight: 600;
+            margin: 0;
+
+            img.icon {
+              height: 16px;
+              margin: 0 6px 0 0;
+            }
+          }
+
+          .description {
+            font-size: 14px;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 700px) {
+  .main {
+    ul.projects {
+      .project {
+        grid-template-columns: 40px 22px auto;
+
+        & > * {
+          margin: 0 5px;
+        }
+
+        &__date {
+          padding: 0;
+          margin: 0;
+
+          .date {
+            writing-mode: sideways-lr;
+          }
+        }
+
+        &__information {
+          grid-template-columns: auto;
+          margin: 0;
+
+          .tags {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

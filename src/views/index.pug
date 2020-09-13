@@ -1,20 +1,17 @@
 include ./include/header
 
-    .content-container
+    section.content-container(aria-label='Personal and contact information')
         include ./include/personal
 
-    .content-container
-        h1.wrap-container
-            span.wrap-container__item Mikhail Goloto, 
-            | &nbsp;
-            span.wrap-container__item web developer
+    section.content-container(aria-label='Main title of page')
+        h1 Mikhail&nbsp;Goloto, web&nbsp;developer
 
         .job-ready ready for remote job or relocation
 
-    .content-container
+    section.content-container(aria-label='Links that can say more about me')
         include ./include/links
 
-    .content-container
+    section.content-container(aria-label='Timeline of my work and technologies experience')
         include ./include/timeline
 
 include ./include/footer

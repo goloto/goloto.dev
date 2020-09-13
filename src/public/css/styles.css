@@ -819,24 +819,31 @@ ul.links svg.vk:hover #border {
   .main .timeline .timeline__item.timeline__item-experience {
     flex-direction: row-reverse;
   }
+
   .main .timeline .timeline__item.timeline__item-experience .timeline__line.timeline__line-tech {
     display: none;
   }
+
   .main .timeline .timeline__item.timeline__item-experience .timeline__description.timeline__description-tech {
     display: none;
   }
+
   .main .timeline .timeline__item.timeline__item-tech .timeline__line.timeline__line-experience {
     display: none;
   }
+
   .main .timeline .timeline__item.timeline__item-tech .timeline__line.timeline__line-tech {
     background: linear-gradient(black 0%, #63009c 30%, #63009c 70%, black 100%);
   }
+
   .main .timeline .timeline__item.timeline__item-tech .timeline__description.timeline__description-experience {
     display: none;
   }
+
   .main .timeline .timeline__item .timeline__description .description {
     text-align: left;
   }
+
   .main .timeline .timeline__item .timeline__line.tech-line {
     display: none;
   }

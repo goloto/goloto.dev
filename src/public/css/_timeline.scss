@@ -7,6 +7,10 @@
       display: flex;
       flex-direction: row;
 
+      &_tech {
+        color: $purple;
+      }
+
       &:hover {
         .timeline__description {
           .description {
@@ -21,11 +25,11 @@
         }
 
         .timeline__line {
-          .circle-experience {
+          .circle_experience {
             background-color: black;
           }
 
-          .circle-tech {
+          .circle_tech {
             background-color: $purple;
           }
         }
@@ -37,14 +41,10 @@
       margin: auto 10px auto 10px;
 
       .years {
-        &-tech {
-          color: $purple;
-        }
-
         &__bottom-line {
           font-size: 13px;
           color: gray;
-          text-align: last;
+          text-align: left;
         }
       }
 
@@ -63,7 +63,7 @@
       background-color: black;
       width: 4px;
 
-      &-tech {
+      &_tech {
         background-color: $purple;
       }
 
@@ -71,17 +71,18 @@
         position: absolute;
         width: 8px;
         height: 8px;
-        background-color: white;
+        background-color: aliceblue;
         border-radius: 8px;
         border: solid;
         top: calc(50% - 6px);
 
-        &-tech {
+        &_tech {
           border-color: $purple;
         }
 
-        &-experience {
+        &_experience {
           border-color: black;
+          transition: .2s ease-in;
         }
       }
     }
@@ -99,8 +100,7 @@
         &__top-line {
           z-index: 1;
 
-          &-tech {
-            color: $purple;
+          &_tech {
             font-size: 22px;
             line-height: 32px;
             font-weight: 600;
@@ -155,7 +155,7 @@
           color: gray;
           z-index: 1;
 
-          &-tech {
+          &_tech {
             color: $purpleHover;
             text-align: left;
           }
@@ -183,7 +183,7 @@
         position: relative;
         width: 4px;
 
-        .line-visible {
+        .line_visible {
           background-color: black;
           height: 50%;
         }
@@ -202,7 +202,7 @@
           border: black solid;
           left: -6px;
 
-          &-tech {
+          &_tech {
             border-color: $purple;
           }
         }
@@ -211,7 +211,7 @@
 
     &__item:first-child {
       .tech-line {
-        .line-visible {
+        .line_visible {
           background: linear-gradient(0deg, rgba(99, 0, 156, 1) 0%, rgba(240, 248, 255, 1) 100%);
         }
       }
@@ -219,7 +219,7 @@
 
     &__item:last-child {
       .tech-line {
-        .line-visible {
+        .line_visible {
           background: linear-gradient(0deg, rgba(240, 248, 255, 1) 0%, rgba(99, 0, 156, 1) 100%);
         }
       }
@@ -230,29 +230,23 @@
 @media screen and (max-width: 740px) {
   .main {
     .timeline {
-      .timeline__item.timeline__item-experience {
+      .timeline__item.timeline__item_experience {
         flex-direction: row-reverse;
 
-        .timeline__line.timeline__line-tech {
-          display: none;
-        }
-
-        .timeline__description.timeline__description-tech {
+        .timeline__line.timeline__line_tech,
+        .timeline__description.timeline__description_tech {
           display: none;
         }
       }
 
-      .timeline__item.timeline__item-tech {
-        .timeline__line.timeline__line-experience {
+      .timeline__item.timeline__item_tech {
+        .timeline__line.timeline__line_experience,
+        .timeline__description.timeline__description_experience {
           display: none;
         }
 
-        .timeline__line.timeline__line-tech {
+        .timeline__line.timeline__line_tech {
           background: linear-gradient(black 0%, $purple 30%, $purple 70%, black 100%);
-        }
-
-        .timeline__description.timeline__description-experience {
-          display: none;
         }
       }
 

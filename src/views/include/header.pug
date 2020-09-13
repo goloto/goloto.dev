@@ -1,8 +1,8 @@
 doctype html
-html
+html(lang='en')
     include ./head
     body
-        header.header(id='header')
+        header.header(id='header').to-change_background
             .narrow-container
                 .header__logo
                     .logo
@@ -12,40 +12,24 @@ html
                                 .dot-top
                                 .dot-bottom(id='logo-emoji')
                             .logo__text dev
-                .header__menu
-                    ul.menu
-                        li.menu__item.transition-std
+                nav.header__menu(role='menu')
+                    ul.menu.to-change_background
+                        li.menu__item(role='menuitem')
                             a.link(href='/projects')
                                 .link__icon &#128194;
                                 .link__text projects
-                        li.menu__item.transition-std
-                            a.link(href='/apps')
+                        li.menu__item(role='menuitem')
+                            .link
                                 .link__icon &#128230;
                                 .link__text apps
                             .header__pop-up-menu
-                                ul.pop-up-menu
+                                ul.pop-up-menu.to-change_background-hover
                                     .narrow-container
-                                        li.pop-up-menu__item.transition-std
-                                            a.link(href='/apps/calc')
-                                                .link__icon ➗
-                                                .link__text calc
-                                        li.pop-up-menu__item.transition-std
+                                        li.pop-up-menu__item
                                             a.link(href='/apps/404')
                                                 .link__icon &#128030;
                                                 .link__text 404
-                                        li.pop-up-menu__item.transition-std
-                                            a.link(href='/apps/mines')
-                                                .link__icon &#128163;
-                                                .link__text mines
-                        li.menu__item.transition-std
-                            a.link(href='/about')
-                                .link__icon
-                                .link__text about
-                        li.menu__item.transition-std
-                            a.link(href='/bio')
-                                .link__icon &#129334;
-                                .libk__text biography
 
         main.main
             .narrow-container.main__column
-                span
+                |
