@@ -12,6 +12,11 @@ ul.links {
     fill: $purple;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
+    transition: .2s ease-in;
+
+    & > * {
+      transition: .2s ease-in;
+    }
 
     &:hover {
       background-color: #ddeeff;
