@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	logoEmojiShower();
 	colorSwitcher();
+	centerHeader();
 });
 
 function getRandomInt(min, max) {
@@ -124,4 +125,21 @@ function changeElementsColor(color) {
 				break;
 		}
 	})
+}
+
+function centerHeader() {
+	let header = document.getElementById('header');
+	let center = () => {
+		document.querySelector('header .narrow-container').style.justifyContent = 'space-around';
+	};
+	let recover = () => {
+		document.querySelector('header .narrow-container').style.justifyContent = 'flex-start';
+	}
+
+	if (header.offsetHeight > 100) center();
+
+	window.addEventListener("resize", () => {
+		if (header.offsetHeight > 100) center();
+		else recover();
+	});
 }
