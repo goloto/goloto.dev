@@ -1000,20 +1000,16 @@ ul.links svg.vk:hover #border {
     padding: 0;
     margin: 0;
   }
-
   .main ul.projects .project__date .date {
     writing-mode: sideways-lr;
   }
-
   .main ul.projects .project__information {
     grid-template-columns: auto;
     margin: 0;
   }
-
   .main ul.projects .project__information .tags {
     width: auto;
   }
-
   .main ul.projects .project__information .information h2.name {
     font-size: 20px;
   }
