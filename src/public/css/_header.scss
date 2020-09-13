@@ -3,6 +3,11 @@
   background-color: $purple;
   color: white;
   overflow-y: auto;
+  transition: background-color 0.2s ease-in;
+
+  .narrow-container {
+    flex-wrap: wrap;
+  }
 
   &:hover {
     .logo {
@@ -23,9 +28,6 @@
   }
 
   &__logo {
-    // temporary
-    margin: auto;
-
     .logo {
       display: flex;
       flex-direction: row;
@@ -69,16 +71,18 @@
   }
 
   &__menu {
+    min-height: 42px;
+
     .menu {
-      // temporary hide
-      display: none;
+      display: flex;
       margin: 0;
       padding: 0;
       list-style: none;
       height: 100%;
+      background-color: $purple;
 
       &__item {
-        background-color: $purple;
+        transition: .2s ease-in;
 
         &:hover {
           background-color: $purpleHover;
@@ -86,12 +90,35 @@
           .pop-up-menu {
             visibility: visible;
             opacity: 1;
+
+            &__item {
+              transition: .2s ease-in;
+
+              &:hover {
+                .link {
+                  padding: 12px 7px;
+
+                  &__icon {
+                    width: 22px;
+                    opacity: 1;
+                  }
+                }
+              }
+
+              .link {
+                &__icon {
+                  width: 0;
+                  opacity: 0;
+                }
+              }
+            }
           }
 
           .link {
             padding: 0 7px 0 7px;
+            cursor: pointer;
 
-            .link__icon {
+            &__icon {
               width: 22px;
               opacity: 1;
             }
@@ -134,14 +161,12 @@
           list-style: none;
 
           &__item {
-            background-color: $purpleHover;
-
             &:hover {
               background-color: $purpleDoubleHover;
             }
 
             .link {
-              padding: 12px;
+              padding: 12px 18px;
               height: auto;
             }
           }
