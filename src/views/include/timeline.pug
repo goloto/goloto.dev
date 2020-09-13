@@ -1,33 +1,33 @@
-mixin timeline-first
-    .timeline__item.timeline__item-experience
-        .timeline__description.timeline__description-experience
+mixin timeline_first
+    .timeline__item.timeline__item_experience
+        .timeline__description.timeline__description_experience
             .description.description-column Your company?
         .timeline__line
             .line-invisible
-            .line-visible
+            .line_visible
             .circle
         .timeline__years
             .years-plug
                 .plug 9999
         .timeline__line.tech-line
             .line-invisible
-            .line-visible
-        .timeline__description.timeline__description-tech
-mixin timeline-last
-    .timeline__item.timeline__item-experience
-        .timeline__description.timeline__description-experience
+            .line_visible.to-change_start-timeline
+        .timeline__description.timeline__description_tech
+mixin timeline_last
+    .timeline__item.timeline__item_experience
+        .timeline__description.timeline__description_experience
             .description.description-column Realized myself as a developer
         .timeline__line
-            .line-visible
+            .line_visible
             .line-invisible
             .circle
         .timeline__years
             .years-plug
                 .plug 0000
         .timeline__line.tech-line
-            .line-visible
+            .line_visible.to-change_end-timeline
             .line-invisible
-        .timeline__description.timeline__description-tech
+        .timeline__description.timeline__description_tech
 mixin item(val)
     - var expTopLine = val.experience ? val.experience.topLine : false
 
@@ -43,13 +43,13 @@ mixin item(val)
         else
             .description.description-column
 
-    .timeline__line.timeline__line-experience
+    .timeline__line.timeline__line_experience
         if val.experience
-            .circle.circle-experience.transition-std
+            .circle.circle_experience
 
     .timeline__years
         if val.technologies
-            .years.years-tech
+            .years.years_tech
                 .years__top-line= val.year.start
                 if val.year.end
                     .years__bottom-line — #{val.year.end}
@@ -59,22 +59,22 @@ mixin item(val)
                 if val.year.end
                     .years__bottom-line — #{val.year.end}
 
-    .timeline__line.timeline__line-tech
+    .timeline__line.timeline__line_tech
         if val.technologies
-            .circle.circle-tech.transition-std
+            .circle.circle_tech
 
     .timeline__description
         if val.technologies
             .description.description-column
-                .description__top-line.description__top-line-tech= val.technologies.topLine
-                .description__bottom-line.description__bottom-line-tech= val.technologies.bottomLine
+                .description__top-line.description__top-line_tech= val.technologies.topLine
+                .description__bottom-line.description__bottom-line_tech= val.technologies.bottomLine
         else if val.experienceLogoName
             .description.description-column
                 a.description__logo(class=val.experienceLogoName, href=val.link, target="_blank")
         else
             .description.description-column
-mixin item-technology(val)
-    .timeline__description.timeline__description-experience
+mixin item_technology(val)
+    .timeline__description.timeline__description_experience
         if val.techLogoName
             .description.description-row
                 .description__empty
@@ -82,31 +82,31 @@ mixin item-technology(val)
         else
             .description.description-column
 
-    .timeline__line.timeline__line-experience
+    .timeline__line.timeline__line_experience
 
     .timeline__years
-        .years.years-tech
+        .years.years_tech
             .years__top-line= val.year.start
             if val.year.end
                 .years__bottom-line — #{val.year.end}
 
-    .timeline__line.timeline__line-tech
-        .circle.circle-tech.transition-std
+    .timeline__line.timeline__line_tech.to-change_background
+        .circle.circle_tech.to-change_border
 
-    .timeline__description.timeline__description-tech
+    .timeline__description.timeline__description_tech
         .description.description-column
-            .description__top-line.description__top-line-tech= val.technologies.topLine
-            .description__bottom-line.description__bottom-line-tech= val.technologies.bottomLine
-mixin item-experience(val)
+            .description__top-line.description__top-line_tech= val.technologies.topLine
+            .description__bottom-line.description__bottom-line_tech.to-change_color-hover= val.technologies.bottomLine
+mixin item_experience(val)
     - var expTopLine = val.experience ? val.experience.topLine : false
 
-    .timeline__description.timeline__description-experience
+    .timeline__description.timeline__description_experience
         .description.description-column
             .description__top-line !{expTopLine}
             .description__bottom-line= val.experience.bottomLine
 
-    .timeline__line.timeline__line-experience
-        .circle.circle-experience.transition-std
+    .timeline__line.timeline__line_experience
+        .circle.circle_experience
 
     .timeline__years
         .years
@@ -114,9 +114,9 @@ mixin item-experience(val)
             if val.year.end
                 .years__bottom-line — #{val.year.end}
 
-    .timeline__line.timeline__line-tech
+    .timeline__line.timeline__line_tech.to-change_background
 
-    .timeline__description.timeline__description-tech
+    .timeline__description.timeline__description_tech
         if val.experienceLogoName
             .description.description-column
                 a.description__logo(class=val.experienceLogoName, href=val.link, target="_blank")
@@ -124,14 +124,14 @@ mixin item-experience(val)
             .description.description-column
 
 .timeline
-    +timeline-first
+    +timeline_first
 
     each val in timeline
         if val.experience
-            .timeline__item.timeline__item-experience
-                +item-experience(val)
+            .timeline__item.timeline__item_experience
+                +item_experience(val)
         else
-            .timeline__item.timeline__item-tech
-                +item-technology(val)
+            .timeline__item.timeline__item_tech.to-change_color
+                +item_technology(val)
 
-    +timeline-last
+    +timeline_last
