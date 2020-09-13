@@ -7,7 +7,7 @@ let timeline = [{
 	},
 	experience: {
 		topLine: "Working for <a href='https://www.redbee.ru/' target='_blank'>Redbee</a>",
-		bottomLine: "JS • PHP • CSS • HTML • Git • Bitrix"
+		bottomLine: "JS • PHP • Laravel • CSS • HTML • Git • Bitrix"
 	}
 }, {
 	techLogoName: 'js',
@@ -25,7 +25,7 @@ let timeline = [{
 	},
 	technologies: {
 		topLine: "PHP",
-		bottomLine: "Bitrix"
+		bottomLine: "Bitrix • Laravel"
 	}
 }, {
 	year: {
