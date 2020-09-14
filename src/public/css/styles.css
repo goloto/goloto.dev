@@ -376,13 +376,11 @@ template {
 .header__logo .logo__dots {
   width: 21px;
 }
-
 .header__logo .logo__dots .dot_top, .header__logo .logo__dots .dot_bottom {
   transition: 0.2s ease-in;
   height: 0;
   position: absolute;
 }
-
 .header__logo .logo__dots .dot_top {
   opacity: 1;
   margin: 36px 7px 0 7px;
@@ -391,10 +389,11 @@ template {
   border-radius: 4px;
 }
 
-.header__logo .logo__dots .dot-bottom {
+.header__logo .logo__dots .dot_bottom {
   opacity: 0;
   margin-top: 45px;
 }
+
 .header__menu {
   min-height: 42px;
 }
