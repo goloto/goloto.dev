@@ -174,10 +174,10 @@ function centerHeader() {
 		document.querySelector('header .narrow-container').style.justifyContent = 'flex-start';
 	}
 
-	if (header.offsetHeight > 100) center();
+	if (header.clientHeight > 100) center();
 
 	window.addEventListener("resize", () => {
-		if (header.offsetHeight > 100) center();
+		if (header.clientHeight > 100) center();
 		else recover();
 	});
 }
