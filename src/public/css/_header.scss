@@ -12,13 +12,13 @@
   &:hover {
     .logo {
       &__dots {
-        .dot-top {
+        .dot_top {
           margin-top: 0;
           opacity: 0;
           transition-delay: 0s;
         }
 
-        .dot-bottom {
+        .dot_bottom {
           margin-top: 25px;
           opacity: 1;
           transition-delay: .2s;

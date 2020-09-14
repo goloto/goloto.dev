@@ -348,16 +348,19 @@ template {
 .header .narrow-container {
   flex-wrap: wrap;
 }
-.header:hover .logo__dots .dot-top {
+
+.header:hover .logo__dots .dot_top {
   margin-top: 0;
   opacity: 0;
   transition-delay: 0s;
 }
-.header:hover .logo__dots .dot-bottom {
+
+.header:hover .logo__dots .dot_bottom {
   margin-top: 25px;
   opacity: 1;
   transition-delay: 0.2s;
 }
+
 .header__logo .logo {
   display: flex;
   flex-direction: row;
