@@ -48,13 +48,13 @@
       &__dots {
         width: 21px;
 
-        .dot-top, .dot-bottom {
+        .dot_top, .dot_bottom {
           transition: .2s ease-in;
           height: 0;
           position: absolute;
         }
 
-        .dot-top {
+        .dot_top {
           opacity: 1;
           margin: 36px 7px 0 7px;
           transition-delay: .2s;
