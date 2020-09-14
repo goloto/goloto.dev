@@ -1002,6 +1002,7 @@ ul.links svg.vk:hover #border {
   }
   .main ul.projects .project__date .date {
     writing-mode: sideways-lr;
+    -webkit-writing-mode: vertical-lr;
   }
   .main ul.projects .project__information {
     grid-template-columns: auto;
