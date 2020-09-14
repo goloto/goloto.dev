@@ -54,7 +54,7 @@
           position: absolute;
         }
 
-        .dot_top {
+        .dot_top, .dot_top_emoji-hide {
           opacity: 1;
           margin: 36px 7px 0 7px;
           transition-delay: .2s;
@@ -62,9 +62,21 @@
           border-radius: 4px;
         }
 
-        .dot_bottom {
+        .dot_bottom, .dot_bottom_emoji-hide {
           opacity: 0;
           margin-top: 45px;
+        }
+
+        .dot_top_emoji-show {
+          margin-top: 0;
+          opacity: 0;
+          transition-delay: 0s;
+        }
+
+        .dot_bottom_emoji-show {
+          margin-top: 25px;
+          opacity: 1;
+          transition-delay: .2s;
         }
       }
     }

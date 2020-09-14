@@ -14,16 +14,54 @@ function getRandomInt(min, max) {
 }
 
 function logoEmojiShower() {
+	let emoji = ['🤖', '👽', '😻', '🤢', '👻', '👾', '🎃', '👨‍💻', '🤟', '🌈', '💥', '🍕', '☕️', '🎮', '🚀', '🌌',
+		'💾', '☢️', '🌐', '☄️', '📚', '🧻', '🛸', '🍩', '🎂', '🧄', '⚡️', '🌊', '🪐', '🍓', '🦾', '👀', '🍭', '🍦',
+		'🎓', '🔋'];
+	let logoEmoji = document.getElementById('logo__dot_bottom');
 	let header = document.getElementById('header');
+	let dotTop = document.getElementById('logo__dot_top');
+	let dotBottom = document.getElementById('logo__dot_bottom');
 
-	header.addEventListener('mouseenter', function () {
-		let emoji = ['🤖', '👽', '😻', '🤢', '👻', '👾', '🎃', '👨‍💻', '🤟', '🌈', '💥', '🍕', '☕️', '🎮', '🚀', '🌌',
-			'💾', '☢️', '🌐', '☄️', '📚', '🧻', '🛸', '🍩', '🎂', '🧄', '⚡️', '🌊', '🪐', '🍓', '🦾', '👀', '🍭', '🍦',
-			'🎓', '🔋'];
-		let logoEmoji = document.getElementById('logo-emoji');
+	if (header.offsetWidth > 700) {
+		header.addEventListener('mouseenter', function () {
+			logoEmoji.innerHTML = emoji[getRandomInt(0, emoji.length)];
+		});
+	} else {
+		document.addEventListener('scroll', () => {
+			if (window.pageYOffset === 0) {
+				showEmoji();
+				showEmojiRecursively();
+			} else hideEmoji();
+		})
+	}
 
+	function showEmoji() {
 		logoEmoji.innerHTML = emoji[getRandomInt(0, emoji.length)];
-	});
+
+		dotTop.classList.remove('dot_top_emoji-hide');
+		dotBottom.classList.remove('dot_bottom_emoji-hide');
+
+		dotTop.classList.add('dot_top_emoji-show');
+		dotBottom.classList.add('dot_bottom_emoji-show');
+	}
+
+	function hideEmoji() {
+		dotTop.classList.remove('dot_top_emoji-show');
+		dotBottom.classList.remove('dot_bottom_emoji-show');
+
+		dotTop.classList.add('dot_top_emoji-hide');
+		dotBottom.classList.add('dot_bottom_emoji-hide');
+	}
+
+	function showEmojiRecursively() {
+		if (window.pageYOffset === 0) {
+			setTimeout(hideEmoji, 5000);
+			setTimeout(() => {
+				showEmoji();
+				showEmojiRecursively();
+			}, 10000);
+		} else hideEmoji();
+	}
 }
 
 function colorSwitcher() {
