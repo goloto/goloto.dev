@@ -187,3 +187,11 @@
     }
   }
 }
+
+@media (max-width: 460px) {
+  header {
+    .narrow-container {
+      justify-content: space-around;
+    }
+  }
+}
