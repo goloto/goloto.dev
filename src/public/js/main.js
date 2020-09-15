@@ -22,19 +22,13 @@ function logoEmojiShower() {
 	let header = document.getElementById('header');
 	let dotTop = document.getElementById('logo__dot_top');
 	let dotBottom = document.getElementById('logo__dot_bottom');
+	let isEmojiShowing = false;
 
 	if (header.offsetWidth > 700 || !window.mobileCheck) {
 		header.addEventListener('mouseenter', function () {
 			logoEmoji.innerHTML = emoji[getRandomInt(0, emoji.length)];
 		});
-	} else {
-		document.addEventListener('scroll', () => {
-			if (window.pageYOffset === 0) {
-				showEmoji();
-				showEmojiRecursively();
-			} else hideEmoji();
-		})
-	}
+	} else showEmojiRecursively();
 
 	function showEmoji() {
 		logoEmoji.innerHTML = emoji[getRandomInt(0, emoji.length)];
@@ -44,6 +38,8 @@ function logoEmojiShower() {
 
 		dotTop.classList.add('dot_top_emoji-show');
 		dotBottom.classList.add('dot_bottom_emoji-show');
+
+		isEmojiShowing = true;
 	}
 
 	function hideEmoji() {
@@ -52,16 +48,16 @@ function logoEmojiShower() {
 
 		dotTop.classList.add('dot_top_emoji-hide');
 		dotBottom.classList.add('dot_bottom_emoji-hide');
+
+		isEmojiShowing = false;
 	}
 
 	function showEmojiRecursively() {
-		if (window.pageYOffset === 0) {
-			setTimeout(hideEmoji, 5000);
-			setTimeout(() => {
-				showEmoji();
-				showEmojiRecursively();
-			}, 10000);
-		} else hideEmoji();
+		setTimeout(hideEmoji, 7500);
+		setTimeout(() => {
+			showEmoji();
+			showEmojiRecursively();
+		}, 15000);
 	}
 }
 
