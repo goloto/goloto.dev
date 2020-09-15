@@ -70,6 +70,7 @@
           margin: 0 10px 0 0;
           display: flex;
           flex-wrap: wrap;
+          height: min-content;
 
           .tag {
             display: flex;
@@ -80,39 +81,39 @@
             margin: 2px 4px 2px 0;
 
             &_bitrix {
-              background-color: #3bc8f5;
+              background-color: rgb(81, 135, 255);
             }
 
             &_modx {
-              background-color: #6bad1e;
+              background-color: rgb(255, 137, 126);
             }
 
             &_laravel {
-              background-color: #FF2D20;
+              background-color: rgb(194, 2, 94);
             }
 
             &_integration {
-              background-color: darkviolet;
+              background-color: rgb(133, 74, 214);
             }
 
             &_ui {
-              background-color: lightseagreen;
+              background-color: rgb(135, 58, 97);
             }
 
             &_seo {
-              background-color: orangered;
+              background-color: rgb(158, 76, 149);
             }
 
             &_features {
-              background-color: indianred;
+              background-color: rgb(94, 109, 184);
             }
 
             &_deploy {
-              background-color: slategray;
+              background-color: rgb(41, 71, 107);
             }
 
             &_spec {
-              background-color: saddlebrown;
+              background-color: rgb(88, 143, 152);
             }
           }
         }
@@ -124,9 +125,8 @@
 
           h2.name {
             font-size: 22px;
-            line-height: 32px;
             font-weight: 600;
-            margin: 0;
+            margin: 5px 0;
 
             img.icon {
               height: 16px;

@@ -127,7 +127,7 @@ let projects = [
 		'i3d',
 		'https://i3d.ru/',
 		{start: new Date(2020, 4), end: new Date(2020, 7),},
-		'E-commerce website • Dived into a lot of legacy to set and fix SEO',
+		'E-commerce website • Dived into a lot of legacy to set and fix SEO • Set up pagination for all numbered pages',
 		[tags.bitrix, tags.ui, tags.seo,],),
 
 	new Project(

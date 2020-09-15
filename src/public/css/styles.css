@@ -416,44 +416,35 @@ template {
 .header__menu .menu__item {
   transition: 0.2s ease-in;
 }
-
 .header__menu .menu__item:hover, .header__menu .menu__item:active {
   background-color: #4c0077;
 }
-
 .header__menu .menu__item:hover .pop-up-menu, .header__menu .menu__item:active .pop-up-menu {
   visibility: visible;
   opacity: 1;
 }
-
 .header__menu .menu__item:hover .pop-up-menu__item, .header__menu .menu__item:active .pop-up-menu__item {
   transition: 0.2s ease-in;
 }
-
 .header__menu .menu__item:hover .pop-up-menu__item:hover .link, .header__menu .menu__item:active .pop-up-menu__item:hover .link {
   padding: 12px 7px;
 }
-
 .header__menu .menu__item:hover .pop-up-menu__item:hover .link__icon, .header__menu .menu__item:active .pop-up-menu__item:hover .link__icon {
   width: 22px;
   opacity: 1;
 }
-
 .header__menu .menu__item:hover .pop-up-menu__item .link__icon, .header__menu .menu__item:active .pop-up-menu__item .link__icon {
   width: 0;
   opacity: 0;
 }
-
 .header__menu .menu__item:hover .link, .header__menu .menu__item:active .link {
   padding: 0 7px 0 7px;
   cursor: pointer;
 }
-
 .header__menu .menu__item:hover .link__icon, .header__menu .menu__item:active .link__icon {
   width: 22px;
   opacity: 1;
 }
-
 .header__menu .menu__item:active {
   background-color: #3a005b;
 }
@@ -863,27 +854,25 @@ ul.links svg.vk:hover #border {
 
 @media screen and (max-width: 740px) {
   .main .timeline .timeline__item.timeline__item_experience {
-    flex-direction: row-reverse;
+      flex-direction: row-reverse;
   }
 
-  .main .timeline .timeline__item.timeline__item_experience .timeline__line.timeline__line_tech,
-  .main .timeline .timeline__item.timeline__item_experience .timeline__description.timeline__description_tech {
-    display: none;
-  }
+    .main .timeline .timeline__item.timeline__item_experience .timeline__line.timeline__line_tech,
+    .main .timeline .timeline__item.timeline__item_experience .timeline__description.timeline__description_tech {
+        display: none;
+    }
 
-  .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_experience,
-  .main .timeline .timeline__item.timeline__item_tech .timeline__description.timeline__description_experience {
-    display: none;
-  }
+    .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_experience,
+    .main .timeline .timeline__item.timeline__item_tech .timeline__description.timeline__description_experience {
+        display: none;
+    }
 
-  .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_tech {
-    background: linear-gradient(black 0%, #63009c 30%, #63009c 70%, black 100%);
-  }
-
+    .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_tech {
+        background: linear-gradient(black 0%, #63009c 30%, #63009c 70%, black 100%);
+    }
   .main .timeline .timeline__item .timeline__description .description {
     text-align: left;
   }
-
   .main .timeline .timeline__item .timeline__line.tech-line {
     display: none;
   }
@@ -953,12 +942,13 @@ ul.links svg.vk:hover #border {
   grid-template-columns: 160px auto;
 }
 .main ul.projects .project__information .tags {
-  list-style: none;
-  font-size: 14px;
-  padding: 0;
-  margin: 0 10px 0 0;
-  display: flex;
-  flex-wrap: wrap;
+    list-style: none;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 10px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: min-content;
 }
 .main ul.projects .project__information .tags .tag {
   display: flex;
@@ -969,31 +959,31 @@ ul.links svg.vk:hover #border {
   margin: 2px 4px 2px 0;
 }
 .main ul.projects .project__information .tags .tag_bitrix {
-  background-color: #3bc8f5;
+    background-color: #5187ff;
 }
 .main ul.projects .project__information .tags .tag_modx {
-  background-color: #6bad1e;
+    background-color: #ff897e;
 }
 .main ul.projects .project__information .tags .tag_laravel {
-  background-color: #FF2D20;
+    background-color: #c2025e;
 }
 .main ul.projects .project__information .tags .tag_integration {
-  background-color: darkviolet;
+    background-color: #854ad6;
 }
 .main ul.projects .project__information .tags .tag_ui {
-  background-color: lightseagreen;
+    background-color: #873a61;
 }
 .main ul.projects .project__information .tags .tag_seo {
-  background-color: orangered;
+    background-color: #9e4c95;
 }
 .main ul.projects .project__information .tags .tag_features {
-  background-color: indianred;
+    background-color: #5e6db8;
 }
 .main ul.projects .project__information .tags .tag_deploy {
-  background-color: slategray;
+    background-color: #29476b;
 }
 .main ul.projects .project__information .tags .tag_spec {
-  background-color: saddlebrown;
+    background-color: #588f98;
 }
 .main ul.projects .project__information .information {
   display: flex;
@@ -1001,10 +991,9 @@ ul.links svg.vk:hover #border {
   justify-content: center;
 }
 .main ul.projects .project__information .information h2.name {
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 600;
-  margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 5px 0;
 }
 .main ul.projects .project__information .information h2.name img.icon {
   height: 16px;
@@ -1065,8 +1054,8 @@ main {
   justify-content: center;
 }
 .main a {
-  text-decoration: none;
-  color: #35a1ff;
+    text-decoration: none;
+    color: #5187ff;
 }
 .main .job-ready {
   text-align: center;
