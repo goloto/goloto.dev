@@ -96,7 +96,7 @@
       &__item {
         transition: .2s ease-in;
 
-        &:hover {
+        &:hover, &:active {
           background-color: $purpleHover;
 
           .pop-up-menu {
