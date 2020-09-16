@@ -142,7 +142,8 @@ function colorSwitcher() {
 			'.header__menu .menu__item:hover {background-color:' + color.hover + '}' +
 			'.header__menu .menu__item .pop-up-menu .pop-up-menu__item:hover {background-color:' + color.doubleHover + '}' +
 			'.main ul.projects .project:first-child .project__line {background: linear-gradient(aliceblue, ' + color.main + ', ' + color.main + ')}' +
-			'.main ul.projects .project:last-child .project__line {background: linear-gradient(' + color.main + ', ' + color.main + ', aliceblue)}';
+			'.main ul.projects .project:last-child .project__line {background: linear-gradient(' + color.main + ', ' + color.main + ', aliceblue)}' +
+			'@media screen and (max-width: 740px) { .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_tech {background:linear-gradient(black 0%, ' + color.main + ' 30%, ' + color.main + ' 70%, black 100%)} }';
 
 		toChangeElements.forEach((element) => {
 			let className = element.className.baseVal === undefined ? element.className : element.className.baseVal;
