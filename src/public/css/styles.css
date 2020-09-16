@@ -853,9 +853,9 @@ ul.links svg.vk:hover #border {
 }
 
 @media screen and (max-width: 740px) {
-  .main .timeline .timeline__item.timeline__item_experience {
-      flex-direction: row-reverse;
-  }
+    .main .timeline .timeline__item.timeline__item_experience {
+        flex-direction: row-reverse;
+    }
 
     .main .timeline .timeline__item.timeline__item_experience .timeline__line.timeline__line_tech,
     .main .timeline .timeline__item.timeline__item_experience .timeline__description.timeline__description_tech {
@@ -870,12 +870,14 @@ ul.links svg.vk:hover #border {
     .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_tech {
         background: linear-gradient(black 0%, #63009c 30%, #63009c 70%, black 100%);
     }
-  .main .timeline .timeline__item .timeline__description .description {
-    text-align: left;
-  }
-  .main .timeline .timeline__item .timeline__line.tech-line {
-    display: none;
-  }
+
+    .main .timeline .timeline__item .timeline__description .description {
+        text-align: left;
+    }
+
+    .main .timeline .timeline__item .timeline__line.tech-line {
+        display: none;
+    }
 }
 .pageNotFound {
   font-size: 100px;

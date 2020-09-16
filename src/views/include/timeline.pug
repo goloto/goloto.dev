@@ -39,7 +39,7 @@ mixin item(val)
         else if val.techLogoName
             .description.description-row
                 .description__empty
-                a.description__logo(class=val.techLogoName, href=val.link, target="_blank")
+                .description__logo(class=val.techLogoName)
         else
             .description.description-column
 
@@ -70,7 +70,7 @@ mixin item(val)
                 .description__bottom-line.description__bottom-line_tech= val.technologies.bottomLine
         else if val.experienceLogoName
             .description.description-column
-                a.description__logo(class=val.experienceLogoName, href=val.link, target="_blank")
+                .description__logo(class=val.experienceLogoName)
         else
             .description.description-column
 mixin item_technology(val)
@@ -78,7 +78,7 @@ mixin item_technology(val)
         if val.techLogoName
             .description.description-row
                 .description__empty
-                a.description__logo(class=val.techLogoName, href=val.link, target="_blank")
+                .description__logo(class=val.techLogoName)
         else
             .description.description-column
 
@@ -119,7 +119,7 @@ mixin item_experience(val)
     .timeline__description.timeline__description_tech
         if val.experienceLogoName
             .description.description-column
-                a.description__logo(class=val.experienceLogoName, href=val.link, target="_blank")
+                .description__logo(class=val.experienceLogoName)
         else
             .description.description-column
 
