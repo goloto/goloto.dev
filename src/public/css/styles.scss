@@ -1,12 +1,10 @@
-$purple: #63009c;
-$purpleHover: #4c0077;
-$purpleDoubleHover: #3a005b;
+$purple: rgb(133, 74, 214);
+$purpleHover: rgb(113, 54, 194);
+$purpleDoubleHover: rgb(93, 34, 174);
 
 $backgroundColor: aliceblue;
 
-$desktopWidth: 1024px;
-
-@import "import";
+@import "imported";
 
 @font-face {
   font-family: JetBrains Mono;
@@ -64,7 +62,7 @@ section.content-container {
 
 @media (min-width: 1024px) {
   .narrow-container {
-    width: $desktopWidth;
+    width: 1024px;
   }
 }
 

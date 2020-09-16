@@ -339,11 +339,11 @@ template {
 }
 
 .header {
-  display: flex;
-  background-color: #63009c;
-  color: white;
-  overflow-y: auto;
-  transition: background-color 0.2s ease-in;
+    display: flex;
+    background-color: #854ad6;
+    color: white;
+    overflow-y: auto;
+    transition: background-color 0.2s ease-in;
 }
 .header .narrow-container {
   flex-wrap: wrap;
@@ -406,18 +406,18 @@ template {
   min-height: 42px;
 }
 .header__menu .menu {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  height: 100%;
-  background-color: #63009c;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    background-color: #854ad6;
 }
 .header__menu .menu__item {
   transition: 0.2s ease-in;
 }
 .header__menu .menu__item:hover, .header__menu .menu__item:active {
-  background-color: #4c0077;
+    background-color: #7136c2;
 }
 .header__menu .menu__item:hover .pop-up-menu, .header__menu .menu__item:active .pop-up-menu {
   visibility: visible;
@@ -446,7 +446,7 @@ template {
   opacity: 1;
 }
 .header__menu .menu__item:active {
-  background-color: #3a005b;
+    background-color: #5d22ae;
 }
 .header__menu .menu__item .link {
   display: flex;
@@ -463,22 +463,22 @@ template {
   transition: 0.2s ease-in;
 }
 .header__menu .menu__item .pop-up-menu {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.2s ease-in, visibility 0.2s ease-in;
-  display: flex;
-  position: absolute;
-  left: 0;
-  background-color: #4c0077;
-  z-index: 10;
-  height: auto;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in, visibility 0.2s ease-in;
+    display: flex;
+    position: absolute;
+    left: 0;
+    background-color: #7136c2;
+    z-index: 10;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .header__menu .menu__item .pop-up-menu__item:hover {
-  background-color: #3a005b;
+    background-color: #5d22ae;
 }
 .header__menu .menu__item .pop-up-menu__item .link {
   padding: 12px 18px;
@@ -491,12 +491,12 @@ template {
   }
 }
 .footer {
-  display: flex;
-  background-color: aliceblue;
-  border-top: solid;
-  border-color: #63009c;
-  color: gray;
-  overflow-y: auto;
+    display: flex;
+    background-color: aliceblue;
+    border-top: solid;
+    border-color: #854ad6;
+    color: gray;
+    overflow-y: auto;
 }
 .footer__columns {
   display: flex;
@@ -580,12 +580,12 @@ template {
   flex-direction: row;
 }
 .main .personal .contacts-list__item::before {
-  content: "•";
-  width: 18px;
-  color: #63009c;
-  margin-left: 6px;
-  margin-right: 3px;
-  transition: 0.2s ease-in, 0.2s ease-out;
+    content: "•";
+    width: 18px;
+    color: #854ad6;
+    margin-left: 6px;
+    margin-right: 3px;
+    transition: 0.2s ease-in, 0.2s ease-out;
 }
 .main .personal .contacts__about {
   display: none;
@@ -622,11 +622,11 @@ ul.links {
   flex-wrap: wrap;
 }
 ul.links svg {
-  height: 50px;
-  fill: #63009c;
-  padding: 10px 20px 10px 20px;
-  border-radius: 10px;
-  transition: 0.2s ease-in;
+    height: 50px;
+    fill: #854ad6;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
 }
 ul.links svg > * {
   transition: 0.2s ease-in;
@@ -692,7 +692,7 @@ ul.links svg.vk:hover #border {
   flex-direction: row;
 }
 .main .timeline__item_tech {
-  color: #63009c;
+    color: #854ad6;
 }
 .main .timeline__item:hover .timeline__description .description .description__logo {
   width: 100%;
@@ -704,7 +704,7 @@ ul.links svg.vk:hover #border {
   background-color: black;
 }
 .main .timeline__item:hover .timeline__line .circle_tech {
-  background-color: #63009c;
+    background-color: #854ad6;
 }
 .main .timeline__years {
   font-size: 22px;
@@ -727,7 +727,7 @@ ul.links svg.vk:hover #border {
   width: 4px;
 }
 .main .timeline__line_tech {
-  background-color: #63009c;
+    background-color: #854ad6;
 }
 .main .timeline__line .circle {
   position: absolute;
@@ -739,7 +739,7 @@ ul.links svg.vk:hover #border {
   top: calc(50% - 6px);
 }
 .main .timeline__line .circle_tech {
-  border-color: #63009c;
+    border-color: #854ad6;
 }
 .main .timeline__line .circle_experience {
   border-color: black;
@@ -804,8 +804,8 @@ ul.links svg.vk:hover #border {
   z-index: 1;
 }
 .main .timeline__description .description__bottom-line_tech {
-  color: #4c0077;
-  text-align: left;
+    color: #7136c2;
+    text-align: left;
 }
 .main .timeline__description .description-row {
   flex-direction: row;
@@ -843,7 +843,7 @@ ul.links svg.vk:hover #border {
   left: -6px;
 }
 .main .timeline__item:first-child .timeline__line .circle_tech, .main .timeline__item:last-child .timeline__line .circle_tech {
-  border-color: #63009c;
+    border-color: #854ad6;
 }
 .main .timeline__item:first-child .tech-line .line_visible {
   background: linear-gradient(0deg, #63009c 0%, aliceblue 100%);
@@ -868,7 +868,7 @@ ul.links svg.vk:hover #border {
     }
 
     .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_tech {
-        background: linear-gradient(black 0%, #63009c 30%, #63009c 70%, black 100%);
+        background: linear-gradient(black 0%, #854ad6 30%, #854ad6 70%, black 100%);
     }
 
     .main .timeline .timeline__item .timeline__description .description {
@@ -904,10 +904,10 @@ ul.links svg.vk:hover #border {
   grid-template-columns: 100px 22px auto;
 }
 .main ul.projects .project:first-child .project__line {
-  background: linear-gradient(aliceblue, #63009c, #63009c);
+    background: linear-gradient(aliceblue, #854ad6, #854ad6);
 }
 .main ul.projects .project:last-child .project__line {
-  background: linear-gradient(#63009c, #63009c, aliceblue);
+    background: linear-gradient(#854ad6, #854ad6, aliceblue);
 }
 .main ul.projects .project > * {
   margin: 0 10px;
@@ -924,20 +924,20 @@ ul.links svg.vk:hover #border {
   margin: auto 0;
 }
 .main ul.projects .project__line {
-  display: flex;
-  position: relative;
-  justify-content: space-around;
-  width: 2px;
-  background-color: #63009c;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 2px;
+    background-color: #854ad6;
 }
 .main ul.projects .project__line .circle {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: aliceblue;
-  border: solid #63009c;
-  border-radius: 8px;
-  top: calc(50% - 6px);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: aliceblue;
+    border: solid #854ad6;
+    border-radius: 8px;
+    top: calc(50% - 6px);
 }
 .main ul.projects .project__information {
   display: grid;

@@ -1,30 +1,39 @@
-include ./include/header
+doctype html
+html(lang='en')
 
-    section.content-container(aria-label='Main title of page')
-        h1 Projects
+    include ./include/header
 
-    section.content-container(aria-label='Projects')
-        ul.projects
-            each project in projects
-                li.project
-                    .project__date
-                        .date
-                            .date__start= project.date.start.toLocaleString('en-US', {month: 'short', year: 'numeric'})
-                            .date__end
-                                if project.date.end
-                                    | — #{project.date.end.toLocaleString('en-US', {month: 'short', year: 'numeric'})}
-                                else
-                                    | — now
-                    .project__line.to-change_background
-                        .circle.to-change_border
-                    .project__information
-                        ul.tags
-                            each tag in project.tags
-                                li.tag(class='tag_' + tag.code)= tag.name
-                        .information
-                            h2.name
-                                img.icon(src='/img/projects/' + project.code + '.ico', alt=project.code + '-icon')
-                                a(href=project.url, target='_blank')= project.name
-                            .description= project.description
+        section.content-container(aria-label='Main title of page')
+            h1 Projects
 
-include ./include/footer
+        section.content-container(aria-label='Projects')
+            ul.projects
+                each project in projects
+                    li.project
+                        .project__date
+                            .date
+                                .date__start= project.date.start.toLocaleString('en-US', {
+																	month: 'short',
+																	year: 'numeric'
+																})
+                                .date__end
+                                    if project.date.end
+                                        | — #{project.date.end.toLocaleString('en-US', {
+																					month: 'short',
+																					year: 'numeric'
+																				})}
+                                    else
+                                        | — now
+                        .project__line.to-change_background
+                            .circle.to-change_border
+                        .project__information
+                            ul.tags
+                                each tag in project.tags
+                                    li.tag(class='tag_' + tag.code)= tag.name
+                            .information
+                                h2.name
+                                    img.icon(src='/img/projects/' + project.code + '.ico', alt=project.code + '-icon')
+                                    a(href=project.url, target='_blank')= project.name
+                                .description= project.description
+
+    include ./include/footer
