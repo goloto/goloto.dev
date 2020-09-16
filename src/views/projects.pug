@@ -12,16 +12,10 @@ html(lang='en')
                     li.project
                         .project__date
                             .date
-                                .date__start= project.date.start.toLocaleString('en-US', {
-																	month: 'short',
-																	year: 'numeric'
-																})
+                                .date__start= project.date.start.toLocaleString('en-US', { month: 'short', year: 'numeric' })
                                 .date__end
                                     if project.date.end
-                                        | — #{project.date.end.toLocaleString('en-US', {
-																					month: 'short',
-																					year: 'numeric'
-																				})}
+                                        | — #{project.date.end.toLocaleString('en-US', { month: 'short', year: 'numeric' })}
                                     else
                                         | — now
                         .project__line.to-change_background
