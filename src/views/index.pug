@@ -1,17 +1,20 @@
-include ./include/header
+doctype html
+html(lang='en')
 
-    section.content-container(aria-label='Personal and contact information')
-        include ./include/personal
+    include ./include/header
 
-    section.content-container(aria-label='Main title of page')
-        h1 Mikhail&nbsp;Goloto, web&nbsp;developer
+        section.content-container(aria-label='Personal and contact information')
+            include ./include/personal
 
-        .job-ready ready for remote job or relocation
+        section.content-container(aria-label='Main title of page')
+            h1 Mikhail&nbsp;Goloto, web&nbsp;developer
 
-    section.content-container(aria-label='Links that can say more about me')
-        include ./include/links
+            .job-ready ready for remote job or relocation
 
-    section.content-container(aria-label='Timeline of my work and technologies experience')
-        include ./include/timeline
+        section.content-container(aria-label='Links that can say more about me')
+            include ./include/links
 
-include ./include/footer
+        section.content-container(aria-label='Timeline of my work and technologies experience')
+            include ./include/timeline
+
+    include ./include/footer
