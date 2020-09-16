@@ -339,11 +339,11 @@ template {
 }
 
 .header {
-    display: flex;
-    background-color: #854ad6;
-    color: white;
-    overflow-y: auto;
-    transition: background-color 0.2s ease-in;
+  display: flex;
+  background-color: #854ad6;
+  color: white;
+  overflow-y: auto;
+  transition: background-color 0.2s ease-in;
 }
 .header .narrow-container {
   flex-wrap: wrap;
@@ -406,18 +406,18 @@ template {
   min-height: 42px;
 }
 .header__menu .menu {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    height: 100%;
-    background-color: #854ad6;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  background-color: #854ad6;
 }
 .header__menu .menu__item {
   transition: 0.2s ease-in;
 }
 .header__menu .menu__item:hover, .header__menu .menu__item:active {
-    background-color: #7136c2;
+  background-color: #7136c2;
 }
 .header__menu .menu__item:hover .pop-up-menu, .header__menu .menu__item:active .pop-up-menu {
   visibility: visible;
@@ -446,7 +446,7 @@ template {
   opacity: 1;
 }
 .header__menu .menu__item:active {
-    background-color: #5d22ae;
+  background-color: #5d22ae;
 }
 .header__menu .menu__item .link {
   display: flex;
@@ -463,22 +463,22 @@ template {
   transition: 0.2s ease-in;
 }
 .header__menu .menu__item .pop-up-menu {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.2s ease-in, visibility 0.2s ease-in;
-    display: flex;
-    position: absolute;
-    left: 0;
-    background-color: #7136c2;
-    z-index: 10;
-    height: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in, visibility 0.2s ease-in;
+  display: flex;
+  position: absolute;
+  left: 0;
+  background-color: #7136c2;
+  z-index: 10;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .header__menu .menu__item .pop-up-menu__item:hover {
-    background-color: #5d22ae;
+  background-color: #5d22ae;
 }
 .header__menu .menu__item .pop-up-menu__item .link {
   padding: 12px 18px;
@@ -491,12 +491,12 @@ template {
   }
 }
 .footer {
-    display: flex;
-    background-color: aliceblue;
-    border-top: solid;
-    border-color: #854ad6;
-    color: gray;
-    overflow-y: auto;
+  display: flex;
+  background-color: aliceblue;
+  border-top: solid;
+  border-color: #854ad6;
+  color: gray;
+  overflow-y: auto;
 }
 .footer__columns {
   display: flex;
@@ -580,12 +580,12 @@ template {
   flex-direction: row;
 }
 .main .personal .contacts-list__item::before {
-    content: "•";
-    width: 18px;
-    color: #854ad6;
-    margin-left: 6px;
-    margin-right: 3px;
-    transition: 0.2s ease-in, 0.2s ease-out;
+  content: "•";
+  width: 18px;
+  color: #854ad6;
+  margin-left: 6px;
+  margin-right: 3px;
+  transition: 0.2s ease-in, 0.2s ease-out;
 }
 .main .personal .contacts__about {
   display: none;
@@ -622,11 +622,11 @@ ul.links {
   flex-wrap: wrap;
 }
 ul.links svg {
-    height: 50px;
-    fill: #854ad6;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-    transition: 0.2s ease-in;
+  height: 50px;
+  fill: #854ad6;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
 }
 ul.links svg > * {
   transition: 0.2s ease-in;
@@ -692,7 +692,7 @@ ul.links svg.vk:hover #border {
   flex-direction: row;
 }
 .main .timeline__item_tech {
-    color: #854ad6;
+  color: #854ad6;
 }
 .main .timeline__item:hover .timeline__description .description .description__logo {
   width: 100%;
@@ -704,7 +704,7 @@ ul.links svg.vk:hover #border {
   background-color: black;
 }
 .main .timeline__item:hover .timeline__line .circle_tech {
-    background-color: #854ad6;
+  background-color: #854ad6;
 }
 .main .timeline__years {
   font-size: 22px;
@@ -727,7 +727,7 @@ ul.links svg.vk:hover #border {
   width: 4px;
 }
 .main .timeline__line_tech {
-    background-color: #854ad6;
+  background-color: #854ad6;
 }
 .main .timeline__line .circle {
   position: absolute;
@@ -739,7 +739,7 @@ ul.links svg.vk:hover #border {
   top: calc(50% - 6px);
 }
 .main .timeline__line .circle_tech {
-    border-color: #854ad6;
+  border-color: #854ad6;
 }
 .main .timeline__line .circle_experience {
   border-color: black;
@@ -804,8 +804,8 @@ ul.links svg.vk:hover #border {
   z-index: 1;
 }
 .main .timeline__description .description__bottom-line_tech {
-    color: #7136c2;
-    text-align: left;
+  color: #7136c2;
+  text-align: left;
 }
 .main .timeline__description .description-row {
   flex-direction: row;
@@ -843,7 +843,7 @@ ul.links svg.vk:hover #border {
   left: -6px;
 }
 .main .timeline__item:first-child .timeline__line .circle_tech, .main .timeline__item:last-child .timeline__line .circle_tech {
-    border-color: #854ad6;
+  border-color: #854ad6;
 }
 .main .timeline__item:first-child .tech-line .line_visible {
   background: linear-gradient(0deg, #63009c 0%, aliceblue 100%);
@@ -853,31 +853,31 @@ ul.links svg.vk:hover #border {
 }
 
 @media screen and (max-width: 740px) {
-    .main .timeline .timeline__item.timeline__item_experience {
-        flex-direction: row-reverse;
-    }
+  .main .timeline .timeline__item.timeline__item_experience {
+    flex-direction: row-reverse;
+  }
 
-    .main .timeline .timeline__item.timeline__item_experience .timeline__line.timeline__line_tech,
-    .main .timeline .timeline__item.timeline__item_experience .timeline__description.timeline__description_tech {
-        display: none;
-    }
+  .main .timeline .timeline__item.timeline__item_experience .timeline__line.timeline__line_tech,
+  .main .timeline .timeline__item.timeline__item_experience .timeline__description.timeline__description_tech {
+    display: none;
+  }
 
-    .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_experience,
-    .main .timeline .timeline__item.timeline__item_tech .timeline__description.timeline__description_experience {
-        display: none;
-    }
+  .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_experience,
+  .main .timeline .timeline__item.timeline__item_tech .timeline__description.timeline__description_experience {
+    display: none;
+  }
 
-    .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_tech {
-        background: linear-gradient(black 0%, #854ad6 30%, #854ad6 70%, black 100%);
-    }
+  .main .timeline .timeline__item.timeline__item_tech .timeline__line.timeline__line_tech {
+    background: linear-gradient(black 0%, #854ad6 30%, #854ad6 70%, black 100%);
+  }
 
-    .main .timeline .timeline__item .timeline__description .description {
-        text-align: left;
-    }
+  .main .timeline .timeline__item .timeline__description .description {
+    text-align: left;
+  }
 
-    .main .timeline .timeline__item .timeline__line.tech-line {
-        display: none;
-    }
+  .main .timeline .timeline__item .timeline__line.tech-line {
+    display: none;
+  }
 }
 .pageNotFound {
   font-size: 100px;
@@ -904,10 +904,10 @@ ul.links svg.vk:hover #border {
   grid-template-columns: 100px 22px auto;
 }
 .main ul.projects .project:first-child .project__line {
-    background: linear-gradient(aliceblue, #854ad6, #854ad6);
+  background: linear-gradient(aliceblue, #854ad6, #854ad6);
 }
 .main ul.projects .project:last-child .project__line {
-    background: linear-gradient(#854ad6, #854ad6, aliceblue);
+  background: linear-gradient(#854ad6, #854ad6, aliceblue);
 }
 .main ul.projects .project > * {
   margin: 0 10px;
@@ -924,33 +924,33 @@ ul.links svg.vk:hover #border {
   margin: auto 0;
 }
 .main ul.projects .project__line {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    width: 2px;
-    background-color: #854ad6;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  width: 2px;
+  background-color: #854ad6;
 }
 .main ul.projects .project__line .circle {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background-color: aliceblue;
-    border: solid #854ad6;
-    border-radius: 8px;
-    top: calc(50% - 6px);
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: aliceblue;
+  border: solid #854ad6;
+  border-radius: 8px;
+  top: calc(50% - 6px);
 }
 .main ul.projects .project__information {
   display: grid;
   grid-template-columns: 160px auto;
 }
 .main ul.projects .project__information .tags {
-    list-style: none;
-    font-size: 14px;
-    padding: 0;
-    margin: 0 10px 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    height: min-content;
+  list-style: none;
+  font-size: 14px;
+  padding: 0;
+  margin: 0 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: min-content;
 }
 .main ul.projects .project__information .tags .tag {
   display: flex;
@@ -961,31 +961,31 @@ ul.links svg.vk:hover #border {
   margin: 2px 4px 2px 0;
 }
 .main ul.projects .project__information .tags .tag_bitrix {
-    background-color: #5187ff;
+  background-color: #5187ff;
 }
 .main ul.projects .project__information .tags .tag_modx {
-    background-color: #ff897e;
+  background-color: #ff897e;
 }
 .main ul.projects .project__information .tags .tag_laravel {
-    background-color: #c2025e;
+  background-color: #c2025e;
 }
 .main ul.projects .project__information .tags .tag_integration {
-    background-color: #854ad6;
+  background-color: #854ad6;
 }
 .main ul.projects .project__information .tags .tag_ui {
-    background-color: #873a61;
+  background-color: #873a61;
 }
 .main ul.projects .project__information .tags .tag_seo {
-    background-color: #9e4c95;
+  background-color: #9e4c95;
 }
 .main ul.projects .project__information .tags .tag_features {
-    background-color: #5e6db8;
+  background-color: #5e6db8;
 }
 .main ul.projects .project__information .tags .tag_deploy {
-    background-color: #29476b;
+  background-color: #29476b;
 }
 .main ul.projects .project__information .tags .tag_spec {
-    background-color: #588f98;
+  background-color: #588f98;
 }
 .main ul.projects .project__information .information {
   display: flex;
@@ -993,9 +993,9 @@ ul.links svg.vk:hover #border {
   justify-content: center;
 }
 .main ul.projects .project__information .information h2.name {
-    font-size: 22px;
-    font-weight: 600;
-    margin: 5px 0;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 5px 0;
 }
 .main ul.projects .project__information .information h2.name img.icon {
   height: 16px;
@@ -1056,8 +1056,8 @@ main {
   justify-content: center;
 }
 .main a {
-    text-decoration: none;
-    color: #5187ff;
+  text-decoration: none;
+  color: #5187ff;
 }
 .main .job-ready {
   text-align: center;
