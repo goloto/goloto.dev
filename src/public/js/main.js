@@ -133,10 +133,10 @@ function colorSwitcher() {
 	}
 
 	function changeElementsColor(color) {
-		let additionalStyles = document.head.appendChild(document.createElement("style"));
+		let dynamicStyles = document.getElementById('dynamic-styles');
 		let toChangeElements = document.querySelectorAll("*[class*='to-change']");
 
-		additionalStyles.innerHTML =
+		dynamicStyles.innerHTML =
 			'.main .personal .contacts-list__item::before {color: ' + color.main + '}' +
 			'.main .timeline__item:hover .timeline__line .circle_tech {background-color: ' + color.main + '; transition: background-color 0.2s ease-in}' +
 			'.header__menu .menu__item:hover {background-color:' + color.hover + '}' +
