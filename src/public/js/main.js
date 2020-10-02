@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	logoEmojiShower();
 	colorSwitcher();
+	fitMainBlock();
 });
 
 function getRandomInt(min, max) {
@@ -176,4 +177,12 @@ function colorSwitcher() {
 			}
 		})
 	}
+}
+
+function fitMainBlock() {
+	let header = document.getElementById('header');
+	let footer = document.getElementById('footer');
+	let main = document.getElementById('main');
+
+	main.style.minHeight = 'calc(100vh - ' + (header.offsetHeight + footer.offsetHeight) + 'px)';
 }
