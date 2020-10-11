@@ -26,8 +26,8 @@ html(lang='en')
                                     li.tag(class='tag_' + tag.code)= tag.name
                             .information
                                 h2.name
-                                    img.icon(src='/img/projects/' + project.code + '.ico', alt=project.code + '-icon')
+                                    img.icon(src='/img/projects/' + project.code + '.ico', alt='icon of ' + project.code + ' site')
                                     a(href=project.url, target='_blank')= project.name
-                                .description= project.description
+                                .tasks= project.tasks.sort().join(' • ')
 
     include ./include/footer

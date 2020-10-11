@@ -3,7 +3,7 @@ let timeline = [{
 	link: 'https://www.redbee.ru/',
 	year: {
 		start: "2019",
-		end: "now"
+		end: "2020"
 	},
 	experience: {
 		topLine: "Working for <a href='https://www.redbee.ru/' target='_blank'>Redbee</a>",
