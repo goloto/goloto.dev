@@ -936,13 +936,13 @@ ul.links svg.vk:hover #border {
 }
 .main ul.projects .project__information {
   display: grid;
-  grid-template-columns: 160px auto;
+  grid-template-columns: 170px auto;
 }
 .main ul.projects .project__information .tags {
   list-style: none;
   font-size: 14px;
   padding: 0;
-  margin: 0 10px 0 0;
+  margin: auto 10px auto 0;
   display: flex;
   flex-wrap: wrap;
   height: min-content;
@@ -966,6 +966,9 @@ ul.links svg.vk:hover #border {
 }
 .main ul.projects .project__information .tags .tag_integration {
   background-color: #854ad6;
+}
+.main ul.projects .project__information .tags .tag_backend {
+  background-color: #1c5d67;
 }
 .main ul.projects .project__information .tags .tag_ui {
   background-color: #873a61;
@@ -996,7 +999,7 @@ ul.links svg.vk:hover #border {
   height: 16px;
   margin: 0 6px 0 0;
 }
-.main ul.projects .project__information .information .description {
+.main ul.projects .project__information .information .tasks {
   font-size: 14px;
   color: gray;
 }
