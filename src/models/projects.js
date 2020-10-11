@@ -54,7 +54,7 @@ let projects = [
 		'vulkana.ru',
 		'vulcana',
 		'https://www.vulkana.ru/',
-		{start: new Date(2020, 7),},
+		{start: new Date(2020, 7), end: new Date(2020, 8),},
 		'E-commerce website • UI bugs fixed • New features developed • Basic SEO work',
 		[tags.ui, tags.features, tags.seo,],),
 
@@ -158,7 +158,7 @@ let projects = [
 		'liston.ru / listonlab.com',
 		'liston',
 		'https://www.listonlab.com/',
-		{start: new Date(2020, 1),},
+		{start: new Date(2020, 1), end: new Date(2020, 8),},
 		'Business website • Integrated into Bitrix CMS • New design implemented • UI bugs fixed',
 		[tags.bitrix, tags.integration, tags.ui,],),
 
@@ -190,7 +190,7 @@ let projects = [
 		'omez.ru',
 		'omez',
 		'https://omez.ru/',
-		{start: new Date(2019, 9),},
+		{start: new Date(2019, 9), end: new Date(2020, 8),},
 		'Brochure website • Integrated into Bitrix CMS • UI bugs fixed • New features and pages developed • Basic SEO work',
 		[tags.bitrix, tags.integration, tags.ui, tags.seo,],),
 
@@ -198,7 +198,7 @@ let projects = [
 		'baikalelectronics.ru / baikalelectronics.com',
 		'baikalelectronics',
 		'https://baikalelectronics.com/',
-		{start: new Date(2019, 7),},
+		{start: new Date(2019, 7), end: new Date(2020, 8),},
 		'Business website • Several new pages developed',
 		[tags.bitrix, tags.ui, tags.features, tags.deploy,],),
 
