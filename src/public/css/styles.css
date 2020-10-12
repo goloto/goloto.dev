@@ -643,17 +643,14 @@ ul.links svg.github:hover #background {
 ul.links svg.github:hover #border {
   fill: black;
 }
-ul.links svg.hacker-rank #background {
+ul.links svg.codewars #elements {
   fill: aliceblue;
 }
-ul.links svg.hacker-rank:hover #background {
+ul.links svg.codewars:hover #elements {
+  fill: #b1361e;
+}
+ul.links svg.codewars:hover #background {
   fill: black;
-}
-ul.links svg.hacker-rank:hover #symbolOne {
-  fill: white;
-}
-ul.links svg.hacker-rank:hover #symbolTwo {
-  fill: #04b951;
 }
 ul.links svg.linked-in #border {
   fill: aliceblue;
