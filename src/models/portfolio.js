@@ -52,7 +52,7 @@ let tags = {
 	}
 };
 
-let projects = [
+let portfolio = [
 
 	new Project(
 		'vulkana.ru',
@@ -224,6 +224,6 @@ let projects = [
 
 ];
 
-projects = projects.sort((a, b) => b.date.start - a.date.start);
+portfolio = portfolio.sort((a, b) => b.date.start - a.date.start);
 
-module.exports = projects;
+module.exports = portfolio;

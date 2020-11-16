@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const projectsRouter = require('./projects');
+const portfolioRouter = require('./portfolio');
 const timeline = require('../../models/timeline');
 const meta = require('../../models/meta');
 
@@ -13,7 +13,7 @@ router
 		});
 		console.log('Someone open main page at: ', Date.now());
 	})
-	.use('/projects', projectsRouter);
+	.use('/portfolio', portfolioRouter);
 
 module.exports = router;
 

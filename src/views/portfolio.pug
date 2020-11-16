@@ -4,11 +4,11 @@ html(lang='en')
     include ./include/header
 
         section.content-container(aria-label='Main title of page')
-            h1 Projects
+            h1 Portfolio
 
-        section.content-container(aria-label='Projects')
+        section.content-container(aria-label='Portfolio')
             ul.projects
-                each project in projects
+                each project in portfolio
                     li.project
                         .project__date
                             .date
@@ -26,7 +26,7 @@ html(lang='en')
                                     li.tag(class='tag_' + tag.code)= tag.name
                             .information
                                 h2.name
-                                    img.icon(src='/img/projects/' + project.code + '.ico', alt='icon of ' + project.code + ' site')
+                                    img.icon(src='/img/portfolio/' + project.code + '.ico', alt='icon of ' + project.code + ' site')
                                     a(href=project.url, target='_blank')= project.name
                                 .tasks= project.tasks.sort().join(' • ')
 
