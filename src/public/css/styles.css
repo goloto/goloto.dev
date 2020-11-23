@@ -795,6 +795,10 @@ ul.links svg.vk:hover #border {
   background: url("/img/c-sharp-logo.svg") right no-repeat;
   background-size: 53px;
 }
+.main .timeline__description .description .typescript {
+  background: url("/img/typescript-logo.svg") right no-repeat;
+  background-size: 53px;
+}
 .main .timeline__description .description__bottom-line {
   font-size: 14px;
   color: gray;

@@ -1,4 +1,13 @@
 let timeline = [{
+	techLogoName: 'typescript',
+	year: {
+		start: "2020"
+	},
+	technologies: {
+		topLine: "TypeScript",
+		bottomLine: "Angular • RxJS • Vue"
+	}
+},{
 	experienceLogoName: 'redbee',
 	link: 'https://www.redbee.ru/',
 	year: {
@@ -16,7 +25,7 @@ let timeline = [{
 	},
 	technologies: {
 		topLine: "JavaScript",
-		bottomLine: "Node.js • Express • Pug"
+		bottomLine: "jQuery • Node.js • Express • Pug"
 	}
 }, {
 	techLogoName: 'php',
