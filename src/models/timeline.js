@@ -1,11 +1,33 @@
 let timeline = [{
+		experienceLogoName: 'Digital Economy League',
+		link: 'https://www.digitalleague.ru/',
+		year: {
+			start: "2021",
+			end: "Now"
+		},
+		experience: {
+			topLine: "Working for <a href='https://www.digitalleague.ru/' target='_blank'>Digital Economy League</a>",
+			bottomLine: "JavaScript • TypeScript • React • Redux • CSS • HTML • Git"
+		}
+	},{
+		experienceLogoName: 'Nordavind',
+		link: 'https://go.nordavind.ru/',
+		year: {
+			start: "2021",
+			end: "2021"
+		},
+		experience: {
+			topLine: "Working for <a href='https://go.nordavind.ru/' target='_blank'>Nordavind</a>",
+			bottomLine: "JavaScript • TypeScript • React • CSS • HTML • SVN"
+		}
+	},{
 	techLogoName: 'typescript',
 	year: {
 		start: "2020"
 	},
 	technologies: {
 		topLine: "TypeScript",
-		bottomLine: "Angular • RxJS • Vue"
+		bottomLine: "React • Redux • Angular • RxJS"
 	}
 },{
 	experienceLogoName: 'redbee',
