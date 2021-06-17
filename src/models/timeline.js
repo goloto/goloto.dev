@@ -7,7 +7,7 @@ let timeline = [{
 		},
 		experience: {
 			topLine: "Working for <a href='https://www.digitalleague.ru/' target='_blank'>Digital Economy League</a>",
-			bottomLine: "JavaScript • TypeScript • React • Redux • CSS • HTML • Git"
+			bottomLine: "TypeScript • React • Redux • CSS-in-JS • HTML • Git"
 		}
 	},{
 		experienceLogoName: 'Nordavind',
