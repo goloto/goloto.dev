@@ -17,7 +17,7 @@ let timeline = [{
 			end: "2021"
 		},
 		experience: {
-			topLine: "Working for <a href='https://go.nordavind.ru/' target='_blank'>Nordavind</a>",
+			topLine: "Worked for <a href='https://go.nordavind.ru/' target='_blank'>Nordavind</a>",
 			bottomLine: "JavaScript • TypeScript • React • CSS • HTML • SVN"
 		}
 	},{
@@ -37,7 +37,7 @@ let timeline = [{
 		end: "2020"
 	},
 	experience: {
-		topLine: "Working for <a href='https://www.redbee.ru/' target='_blank'>Redbee</a>",
+		topLine: "Worked for <a href='https://www.redbee.ru/' target='_blank'>Redbee</a>",
 		bottomLine: "JS • PHP • Laravel • CSS • HTML • Git • Bitrix"
 	}
 }, {
